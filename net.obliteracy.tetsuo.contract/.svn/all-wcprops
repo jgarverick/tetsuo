@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract
+END
+net.obliteracy.tetsuo.contract.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/net.obliteracy.tetsuo.contract.csproj
+END
+IPayrollService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/IPayrollService.cs
+END
+IFinanceService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/IFinanceService.cs
+END
+IActuarialService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/IActuarialService.cs
+END
+CommonEntityBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/CommonEntityBase.cs
+END
+IHrService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/IHrService.cs
+END
+PayrollService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/PayrollService.cs
+END
+FinanceService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/FinanceService.cs
+END
+ActuarialService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/ActuarialService.cs
+END
+HrService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.contract/HrService.cs
+END

@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="net.obliteracy.tetsuo.entities.model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="netobliteracytetsuoentitiesmodelStoreContainer">
+          <EntitySet Name="Gateway" EntityType="net.obliteracy.tetsuo.entities.model.Store.Gateway" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GatewayStatusHistoryRef" EntityType="net.obliteracy.tetsuo.entities.model.Store.GatewayStatusHistoryRef" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Hub" EntityType="net.obliteracy.tetsuo.entities.model.Store.Hub" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="HubService" EntityType="net.obliteracy.tetsuo.entities.model.Store.HubService" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="HubServiceStatusHistoryRef" EntityType="net.obliteracy.tetsuo.entities.model.Store.HubServiceStatusHistoryRef" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="HubStatusHistoryRef" EntityType="net.obliteracy.tetsuo.entities.model.Store.HubStatusHistoryRef" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Instrumentation" EntityType="net.obliteracy.tetsuo.entities.model.Store.Instrumentation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MetaService" EntityType="net.obliteracy.tetsuo.entities.model.Store.MetaService" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MetaServiceStatusHistoryRef" EntityType="net.obliteracy.tetsuo.entities.model.Store.MetaServiceStatusHistoryRef" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="StatusHistory" EntityType="net.obliteracy.tetsuo.entities.model.Store.StatusHistory" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_GatewayStatusHistoryRef_Gateway" Association="net.obliteracy.tetsuo.entities.model.Store.FK_GatewayStatusHistoryRef_Gateway">
+            <End Role="Gateway" EntitySet="Gateway" />
+            <End Role="GatewayStatusHistoryRef" EntitySet="GatewayStatusHistoryRef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GatewayStatusHistoryRef_StatusHistory" Association="net.obliteracy.tetsuo.entities.model.Store.FK_GatewayStatusHistoryRef_StatusHistory">
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+            <End Role="GatewayStatusHistoryRef" EntitySet="GatewayStatusHistoryRef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Hubs_Gateways" Association="net.obliteracy.tetsuo.entities.model.Store.FK_Hubs_Gateways">
+            <End Role="Gateway" EntitySet="Gateway" />
+            <End Role="Hub" EntitySet="Hub" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubService_MetaService" Association="net.obliteracy.tetsuo.entities.model.Store.FK_HubService_MetaService">
+            <End Role="MetaService" EntitySet="MetaService" />
+            <End Role="HubService" EntitySet="HubService" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubServiceStatusHistoryRef_HubService" Association="net.obliteracy.tetsuo.entities.model.Store.FK_HubServiceStatusHistoryRef_HubService">
+            <End Role="HubService" EntitySet="HubService" />
+            <End Role="HubServiceStatusHistoryRef" EntitySet="HubServiceStatusHistoryRef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubServiceStatusHistoryRef_StatusHistory" Association="net.obliteracy.tetsuo.entities.model.Store.FK_HubServiceStatusHistoryRef_StatusHistory">
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+            <End Role="HubServiceStatusHistoryRef" EntitySet="HubServiceStatusHistoryRef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubStatusHistoryRef_Hub" Association="net.obliteracy.tetsuo.entities.model.Store.FK_HubStatusHistoryRef_Hub">
+            <End Role="Hub" EntitySet="Hub" />
+            <End Role="HubStatusHistoryRef" EntitySet="HubStatusHistoryRef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubStatusHistoryRef_StatusHistory" Association="net.obliteracy.tetsuo.entities.model.Store.FK_HubStatusHistoryRef_StatusHistory">
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+            <End Role="HubStatusHistoryRef" EntitySet="HubStatusHistoryRef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Instrumentation_Gateway" Association="net.obliteracy.tetsuo.entities.model.Store.FK_Instrumentation_Gateway">
+            <End Role="Gateway" EntitySet="Gateway" />
+            <End Role="Instrumentation" EntitySet="Instrumentation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Instrumentation_Hub" Association="net.obliteracy.tetsuo.entities.model.Store.FK_Instrumentation_Hub">
+            <End Role="Hub" EntitySet="Hub" />
+            <End Role="Instrumentation" EntitySet="Instrumentation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MetaServiceStatusHistoryRef_MetaService" Association="net.obliteracy.tetsuo.entities.model.Store.FK_MetaServiceStatusHistoryRef_MetaService">
+            <End Role="MetaService" EntitySet="MetaService" />
+            <End Role="MetaServiceStatusHistoryRef" EntitySet="MetaServiceStatusHistoryRef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MetaServiceStatusHistoryRef_StatusHistory" Association="net.obliteracy.tetsuo.entities.model.Store.FK_MetaServiceStatusHistoryRef_StatusHistory">
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+            <End Role="MetaServiceStatusHistoryRef" EntitySet="MetaServiceStatusHistoryRef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Spokes_Hubs" Association="net.obliteracy.tetsuo.entities.model.Store.FK_Spokes_Hubs">
+            <End Role="Hub" EntitySet="Hub" />
+            <End Role="HubService" EntitySet="HubService" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Gateway">
+          <Key>
+            <PropertyRef Name="GatewayId" />
+          </Key>
+          <Property Name="GatewayId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GatewayName" Type="varchar" MaxLength="50" />
+          <Property Name="GatewayBaseUri" Type="varchar" MaxLength="200" />
+          <Property Name="GatewayDefaultBinding" Type="varchar" MaxLength="50" />
+          <Property Name="GatewayIsActive" Type="bit" />
+          <Property Name="LastStatusHistoryID" Type="int" Nullable="false" />
+          <Property Name="GatewayReplyUri" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="GatewayStatusHistoryRef">
+          <Key>
+            <PropertyRef Name="GatewayStatusHistoryRefId" />
+          </Key>
+          <Property Name="GatewayStatusHistoryRefId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GatewayId" Type="int" Nullable="false" />
+          <Property Name="StatusHistoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hub">
+          <Key>
+            <PropertyRef Name="HubId" />
+          </Key>
+          <Property Name="HubId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HubName" Type="varchar" MaxLength="50" />
+          <Property Name="HubEndpoint" Type="varchar" MaxLength="50" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="GatewayId" Type="int" Nullable="false" />
+          <Property Name="LastStatusHistoryID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HubService">
+          <Key>
+            <PropertyRef Name="HubServiceId" />
+          </Key>
+          <Property Name="HubServiceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HubServiceName" Type="varchar" MaxLength="50" />
+          <Property Name="HubServiceContract" Type="varchar" MaxLength="50" />
+          <Property Name="HubServiceBinding" Type="varchar" MaxLength="50" />
+          <Property Name="HubServiceEndpoint" Type="varchar" MaxLength="50" />
+          <Property Name="HubServiceAssembly" Type="varchar" MaxLength="255" />
+          <Property Name="ClientClass" Type="varchar" MaxLength="255" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="HubId" Type="int" Nullable="false" />
+          <Property Name="LastStatusHistoryID" Type="int" Nullable="false" />
+          <Property Name="MetaServiceId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HubServiceStatusHistoryRef">
+          <Key>
+            <PropertyRef Name="HubServiceStatusHistoryRefId" />
+          </Key>
+          <Property Name="HubServiceStatusHistoryRefId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HubServiceId" Type="int" Nullable="false" />
+          <Property Name="StatusHistoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HubStatusHistoryRef">
+          <Key>
+            <PropertyRef Name="HubStatusHistoryRefId" />
+          </Key>
+          <Property Name="HubStatusHistoryRefId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HubId" Type="int" Nullable="false" />
+          <Property Name="StatusHistoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Instrumentation">
+          <Key>
+            <PropertyRef Name="InstrumentationID" />
+          </Key>
+          <Property Name="InstrumentationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GatewayID" Type="int" />
+          <Property Name="HubID" Type="int" />
+          <Property Name="HubServiceID" Type="int" />
+          <Property Name="EventType" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="EventDetail" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="CorrelationID" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="MetaService">
+          <Key>
+            <PropertyRef Name="MetaServiceId" />
+          </Key>
+          <Property Name="MetaServiceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ServiceDataContract" Type="varchar(max)" Nullable="false" />
+          <Property Name="ServiceWsdl" Type="varchar(max)" Nullable="false" />
+          <Property Name="LastStatusHistoryID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MetaServiceStatusHistoryRef">
+          <Key>
+            <PropertyRef Name="MetaServiceStatusHistoryRefId" />
+          </Key>
+          <Property Name="MetaServiceStatusHistoryRefId" Type="int" Nullable="false" />
+          <Property Name="MetaServiceId" Type="int" Nullable="false" />
+          <Property Name="StatusHistoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StatusHistory">
+          <Key>
+            <PropertyRef Name="StatusHistoryID" />
+          </Key>
+          <Property Name="StatusHistoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="StatusCode" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="StatusDetail" Type="nvarchar(max)" />
+          <Property Name="ModifiedBy" Type="varchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <Association Name="FK_GatewayStatusHistoryRef_Gateway">
+          <End Role="Gateway" Type="net.obliteracy.tetsuo.entities.model.Store.Gateway" Multiplicity="1" />
+          <End Role="GatewayStatusHistoryRef" Type="net.obliteracy.tetsuo.entities.model.Store.GatewayStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gateway">
+              <PropertyRef Name="GatewayId" />
+            </Principal>
+            <Dependent Role="GatewayStatusHistoryRef">
+              <PropertyRef Name="GatewayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GatewayStatusHistoryRef_StatusHistory">
+          <End Role="StatusHistory" Type="net.obliteracy.tetsuo.entities.model.Store.StatusHistory" Multiplicity="1" />
+          <End Role="GatewayStatusHistoryRef" Type="net.obliteracy.tetsuo.entities.model.Store.GatewayStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusHistory">
+              <PropertyRef Name="StatusHistoryID" />
+            </Principal>
+            <Dependent Role="GatewayStatusHistoryRef">
+              <PropertyRef Name="StatusHistoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Hubs_Gateways">
+          <End Role="Gateway" Type="net.obliteracy.tetsuo.entities.model.Store.Gateway" Multiplicity="1" />
+          <End Role="Hub" Type="net.obliteracy.tetsuo.entities.model.Store.Hub" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gateway">
+              <PropertyRef Name="GatewayId" />
+            </Principal>
+            <Dependent Role="Hub">
+              <PropertyRef Name="GatewayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubService_MetaService">
+          <End Role="MetaService" Type="net.obliteracy.tetsuo.entities.model.Store.MetaService" Multiplicity="1" />
+          <End Role="HubService" Type="net.obliteracy.tetsuo.entities.model.Store.HubService" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetaService">
+              <PropertyRef Name="MetaServiceId" />
+            </Principal>
+            <Dependent Role="HubService">
+              <PropertyRef Name="MetaServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubServiceStatusHistoryRef_HubService">
+          <End Role="HubService" Type="net.obliteracy.tetsuo.entities.model.Store.HubService" Multiplicity="1" />
+          <End Role="HubServiceStatusHistoryRef" Type="net.obliteracy.tetsuo.entities.model.Store.HubServiceStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HubService">
+              <PropertyRef Name="HubServiceId" />
+            </Principal>
+            <Dependent Role="HubServiceStatusHistoryRef">
+              <PropertyRef Name="HubServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubServiceStatusHistoryRef_StatusHistory">
+          <End Role="StatusHistory" Type="net.obliteracy.tetsuo.entities.model.Store.StatusHistory" Multiplicity="1" />
+          <End Role="HubServiceStatusHistoryRef" Type="net.obliteracy.tetsuo.entities.model.Store.HubServiceStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusHistory">
+              <PropertyRef Name="StatusHistoryID" />
+            </Principal>
+            <Dependent Role="HubServiceStatusHistoryRef">
+              <PropertyRef Name="StatusHistoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubStatusHistoryRef_Hub">
+          <End Role="Hub" Type="net.obliteracy.tetsuo.entities.model.Store.Hub" Multiplicity="1" />
+          <End Role="HubStatusHistoryRef" Type="net.obliteracy.tetsuo.entities.model.Store.HubStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hub">
+              <PropertyRef Name="HubId" />
+            </Principal>
+            <Dependent Role="HubStatusHistoryRef">
+              <PropertyRef Name="HubId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubStatusHistoryRef_StatusHistory">
+          <End Role="StatusHistory" Type="net.obliteracy.tetsuo.entities.model.Store.StatusHistory" Multiplicity="1" />
+          <End Role="HubStatusHistoryRef" Type="net.obliteracy.tetsuo.entities.model.Store.HubStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusHistory">
+              <PropertyRef Name="StatusHistoryID" />
+            </Principal>
+            <Dependent Role="HubStatusHistoryRef">
+              <PropertyRef Name="StatusHistoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Instrumentation_Gateway">
+          <End Role="Gateway" Type="net.obliteracy.tetsuo.entities.model.Store.Gateway" Multiplicity="0..1" />
+          <End Role="Instrumentation" Type="net.obliteracy.tetsuo.entities.model.Store.Instrumentation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gateway">
+              <PropertyRef Name="GatewayId" />
+            </Principal>
+            <Dependent Role="Instrumentation">
+              <PropertyRef Name="GatewayID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Instrumentation_Hub">
+          <End Role="Hub" Type="net.obliteracy.tetsuo.entities.model.Store.Hub" Multiplicity="0..1" />
+          <End Role="Instrumentation" Type="net.obliteracy.tetsuo.entities.model.Store.Instrumentation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hub">
+              <PropertyRef Name="HubId" />
+            </Principal>
+            <Dependent Role="Instrumentation">
+              <PropertyRef Name="HubID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MetaServiceStatusHistoryRef_MetaService">
+          <End Role="MetaService" Type="net.obliteracy.tetsuo.entities.model.Store.MetaService" Multiplicity="1" />
+          <End Role="MetaServiceStatusHistoryRef" Type="net.obliteracy.tetsuo.entities.model.Store.MetaServiceStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetaService">
+              <PropertyRef Name="MetaServiceId" />
+            </Principal>
+            <Dependent Role="MetaServiceStatusHistoryRef">
+              <PropertyRef Name="MetaServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MetaServiceStatusHistoryRef_StatusHistory">
+          <End Role="StatusHistory" Type="net.obliteracy.tetsuo.entities.model.Store.StatusHistory" Multiplicity="1" />
+          <End Role="MetaServiceStatusHistoryRef" Type="net.obliteracy.tetsuo.entities.model.Store.MetaServiceStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusHistory">
+              <PropertyRef Name="StatusHistoryID" />
+            </Principal>
+            <Dependent Role="MetaServiceStatusHistoryRef">
+              <PropertyRef Name="StatusHistoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Spokes_Hubs">
+          <End Role="Hub" Type="net.obliteracy.tetsuo.entities.model.Store.Hub" Multiplicity="1" />
+          <End Role="HubService" Type="net.obliteracy.tetsuo.entities.model.Store.HubService" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hub">
+              <PropertyRef Name="HubId" />
+            </Principal>
+            <Dependent Role="HubService">
+              <PropertyRef Name="HubId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="net.obliteracy.tetsuo.entities.model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="tetsuoEntities" a:LazyLoadingEnabled="true" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="Gateways" EntityType="net.obliteracy.tetsuo.entities.model.Gateway" />
+          <EntitySet Name="GatewayStatusHistoryRefs" EntityType="net.obliteracy.tetsuo.entities.model.GatewayStatusHistoryRef" />
+          <EntitySet Name="Hubs" EntityType="net.obliteracy.tetsuo.entities.model.Hub" />
+          <EntitySet Name="HubServices" EntityType="net.obliteracy.tetsuo.entities.model.HubService" />
+          <EntitySet Name="HubServiceStatusHistoryRefs" EntityType="net.obliteracy.tetsuo.entities.model.HubServiceStatusHistoryRef" />
+          <EntitySet Name="HubStatusHistoryRefs" EntityType="net.obliteracy.tetsuo.entities.model.HubStatusHistoryRef" />
+          <EntitySet Name="Instrumentations" EntityType="net.obliteracy.tetsuo.entities.model.Instrumentation" />
+          <EntitySet Name="MetaServices" EntityType="net.obliteracy.tetsuo.entities.model.MetaService" />
+          <EntitySet Name="MetaServiceStatusHistoryRefs" EntityType="net.obliteracy.tetsuo.entities.model.MetaServiceStatusHistoryRef" />
+          <EntitySet Name="StatusHistories" EntityType="net.obliteracy.tetsuo.entities.model.StatusHistory" />
+          <AssociationSet Name="FK_GatewayStatusHistoryRef_Gateway" Association="net.obliteracy.tetsuo.entities.model.FK_GatewayStatusHistoryRef_Gateway">
+            <End Role="Gateway" EntitySet="Gateways" />
+            <End Role="GatewayStatusHistoryRef" EntitySet="GatewayStatusHistoryRefs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Hubs_Gateways" Association="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways">
+            <End Role="Gateway" EntitySet="Gateways" />
+            <End Role="Hub" EntitySet="Hubs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Instrumentation_Gateway" Association="net.obliteracy.tetsuo.entities.model.FK_Instrumentation_Gateway">
+            <End Role="Gateway" EntitySet="Gateways" />
+            <End Role="Instrumentation" EntitySet="Instrumentations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GatewayStatusHistoryRef_StatusHistory" Association="net.obliteracy.tetsuo.entities.model.FK_GatewayStatusHistoryRef_StatusHistory">
+            <End Role="StatusHistory" EntitySet="StatusHistories" />
+            <End Role="GatewayStatusHistoryRef" EntitySet="GatewayStatusHistoryRefs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubStatusHistoryRef_Hub" Association="net.obliteracy.tetsuo.entities.model.FK_HubStatusHistoryRef_Hub">
+            <End Role="Hub" EntitySet="Hubs" />
+            <End Role="HubStatusHistoryRef" EntitySet="HubStatusHistoryRefs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Instrumentation_Hub" Association="net.obliteracy.tetsuo.entities.model.FK_Instrumentation_Hub">
+            <End Role="Hub" EntitySet="Hubs" />
+            <End Role="Instrumentation" EntitySet="Instrumentations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Spokes_Hubs" Association="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs">
+            <End Role="Hub" EntitySet="Hubs" />
+            <End Role="HubService" EntitySet="HubServices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubService_MetaService" Association="net.obliteracy.tetsuo.entities.model.FK_HubService_MetaService">
+            <End Role="MetaService" EntitySet="MetaServices" />
+            <End Role="HubService" EntitySet="HubServices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubServiceStatusHistoryRef_HubService" Association="net.obliteracy.tetsuo.entities.model.FK_HubServiceStatusHistoryRef_HubService">
+            <End Role="HubService" EntitySet="HubServices" />
+            <End Role="HubServiceStatusHistoryRef" EntitySet="HubServiceStatusHistoryRefs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubServiceStatusHistoryRef_StatusHistory" Association="net.obliteracy.tetsuo.entities.model.FK_HubServiceStatusHistoryRef_StatusHistory">
+            <End Role="StatusHistory" EntitySet="StatusHistories" />
+            <End Role="HubServiceStatusHistoryRef" EntitySet="HubServiceStatusHistoryRefs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HubStatusHistoryRef_StatusHistory" Association="net.obliteracy.tetsuo.entities.model.FK_HubStatusHistoryRef_StatusHistory">
+            <End Role="StatusHistory" EntitySet="StatusHistories" />
+            <End Role="HubStatusHistoryRef" EntitySet="HubStatusHistoryRefs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MetaServiceStatusHistoryRef_MetaService" Association="net.obliteracy.tetsuo.entities.model.FK_MetaServiceStatusHistoryRef_MetaService">
+            <End Role="MetaService" EntitySet="MetaServices" />
+            <End Role="MetaServiceStatusHistoryRef" EntitySet="MetaServiceStatusHistoryRefs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MetaServiceStatusHistoryRef_StatusHistory" Association="net.obliteracy.tetsuo.entities.model.FK_MetaServiceStatusHistoryRef_StatusHistory">
+            <End Role="StatusHistory" EntitySet="StatusHistories" />
+            <End Role="MetaServiceStatusHistoryRef" EntitySet="MetaServiceStatusHistoryRefs" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Gateway">
+          <Key>
+            <PropertyRef Name="GatewayId" />
+          </Key>
+          <Property Type="Int32" Name="GatewayId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="GatewayName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GatewayBaseUri" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GatewayDefaultBinding" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="GatewayIsActive" />
+          <Property Type="Int32" Name="LastStatusHistoryID" Nullable="false" />
+          <Property Type="String" Name="GatewayReplyUri" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="GatewayStatusHistoryRefs" Relationship="net.obliteracy.tetsuo.entities.model.FK_GatewayStatusHistoryRef_Gateway" FromRole="Gateway" ToRole="GatewayStatusHistoryRef" />
+          <NavigationProperty Name="Hubs" Relationship="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways" FromRole="Gateway" ToRole="Hub" />
+          <NavigationProperty Name="Instrumentations" Relationship="net.obliteracy.tetsuo.entities.model.FK_Instrumentation_Gateway" FromRole="Gateway" ToRole="Instrumentation" />
+        </EntityType>
+        <EntityType Name="GatewayStatusHistoryRef">
+          <Key>
+            <PropertyRef Name="GatewayStatusHistoryRefId" />
+          </Key>
+          <Property Type="Int32" Name="GatewayStatusHistoryRefId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="GatewayId" Nullable="false" />
+          <Property Type="Int32" Name="StatusHistoryId" Nullable="false" />
+          <NavigationProperty Name="Gateway" Relationship="net.obliteracy.tetsuo.entities.model.FK_GatewayStatusHistoryRef_Gateway" FromRole="GatewayStatusHistoryRef" ToRole="Gateway" />
+          <NavigationProperty Name="StatusHistory" Relationship="net.obliteracy.tetsuo.entities.model.FK_GatewayStatusHistoryRef_StatusHistory" FromRole="GatewayStatusHistoryRef" ToRole="StatusHistory" />
+        </EntityType>
+        <EntityType Name="Hub">
+          <Key>
+            <PropertyRef Name="HubId" />
+          </Key>
+          <Property Type="Int32" Name="HubId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="HubName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="HubEndpoint" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" />
+          <Property Type="Int32" Name="GatewayId" Nullable="false" />
+          <Property Type="Int32" Name="LastStatusHistoryID" Nullable="false" />
+          <NavigationProperty Name="Gateway" Relationship="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways" FromRole="Hub" ToRole="Gateway" />
+          <NavigationProperty Name="HubStatusHistoryRefs" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubStatusHistoryRef_Hub" FromRole="Hub" ToRole="HubStatusHistoryRef" />
+          <NavigationProperty Name="Instrumentations" Relationship="net.obliteracy.tetsuo.entities.model.FK_Instrumentation_Hub" FromRole="Hub" ToRole="Instrumentation" />
+          <NavigationProperty Name="HubServices" Relationship="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs" FromRole="Hub" ToRole="HubService" />
+        </EntityType>
+        <EntityType Name="HubService">
+          <Key>
+            <PropertyRef Name="HubServiceId" />
+          </Key>
+          <Property Type="Int32" Name="HubServiceId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="HubServiceName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="HubServiceContract" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="HubServiceBinding" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="HubServiceEndpoint" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="HubServiceAssembly" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ClientClass" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" />
+          <Property Type="Int32" Name="HubId" Nullable="false" />
+          <Property Type="Int32" Name="LastStatusHistoryID" Nullable="false" />
+          <Property Type="Int32" Name="MetaServiceId" Nullable="false" />
+          <NavigationProperty Name="Hub" Relationship="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs" FromRole="HubService" ToRole="Hub" />
+          <NavigationProperty Name="MetaService" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubService_MetaService" FromRole="HubService" ToRole="MetaService" />
+          <NavigationProperty Name="HubServiceStatusHistoryRefs" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubServiceStatusHistoryRef_HubService" FromRole="HubService" ToRole="HubServiceStatusHistoryRef" />
+        </EntityType>
+        <EntityType Name="HubServiceStatusHistoryRef">
+          <Key>
+            <PropertyRef Name="HubServiceStatusHistoryRefId" />
+          </Key>
+          <Property Type="Int32" Name="HubServiceStatusHistoryRefId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="HubServiceId" Nullable="false" />
+          <Property Type="Int32" Name="StatusHistoryId" Nullable="false" />
+          <NavigationProperty Name="HubService" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubServiceStatusHistoryRef_HubService" FromRole="HubServiceStatusHistoryRef" ToRole="HubService" />
+          <NavigationProperty Name="StatusHistory" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubServiceStatusHistoryRef_StatusHistory" FromRole="HubServiceStatusHistoryRef" ToRole="StatusHistory" />
+        </EntityType>
+        <EntityType Name="HubStatusHistoryRef">
+          <Key>
+            <PropertyRef Name="HubStatusHistoryRefId" />
+          </Key>
+          <Property Type="Int32" Name="HubStatusHistoryRefId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="HubId" Nullable="false" />
+          <Property Type="Int32" Name="StatusHistoryId" Nullable="false" />
+          <NavigationProperty Name="Hub" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubStatusHistoryRef_Hub" FromRole="HubStatusHistoryRef" ToRole="Hub" />
+          <NavigationProperty Name="StatusHistory" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubStatusHistoryRef_StatusHistory" FromRole="HubStatusHistoryRef" ToRole="StatusHistory" />
+        </EntityType>
+        <EntityType Name="Instrumentation">
+          <Key>
+            <PropertyRef Name="InstrumentationID" />
+          </Key>
+          <Property Type="Int32" Name="InstrumentationID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="GatewayID" />
+          <Property Type="Int32" Name="HubID" />
+          <Property Type="Int32" Name="HubServiceID" />
+          <Property Type="String" Name="EventType" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EventDetail" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+          <Property Type="String" Name="CorrelationID" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Gateway" Relationship="net.obliteracy.tetsuo.entities.model.FK_Instrumentation_Gateway" FromRole="Instrumentation" ToRole="Gateway" />
+          <NavigationProperty Name="Hub" Relationship="net.obliteracy.tetsuo.entities.model.FK_Instrumentation_Hub" FromRole="Instrumentation" ToRole="Hub" />
+        </EntityType>
+        <EntityType Name="MetaService">
+          <Key>
+            <PropertyRef Name="MetaServiceId" />
+          </Key>
+          <Property Type="Int32" Name="MetaServiceId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="ServiceDataContract" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ServiceWsdl" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="LastStatusHistoryID" Nullable="false" />
+          <NavigationProperty Name="HubServices" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubService_MetaService" FromRole="MetaService" ToRole="HubService" />
+          <NavigationProperty Name="MetaServiceStatusHistoryRefs" Relationship="net.obliteracy.tetsuo.entities.model.FK_MetaServiceStatusHistoryRef_MetaService" FromRole="MetaService" ToRole="MetaServiceStatusHistoryRef" />
+        </EntityType>
+        <EntityType Name="MetaServiceStatusHistoryRef">
+          <Key>
+            <PropertyRef Name="MetaServiceStatusHistoryRefId" />
+          </Key>
+          <Property Type="Int32" Name="MetaServiceStatusHistoryRefId" Nullable="false" />
+          <Property Type="Int32" Name="MetaServiceId" Nullable="false" />
+          <Property Type="Int32" Name="StatusHistoryId" Nullable="false" />
+          <NavigationProperty Name="MetaService" Relationship="net.obliteracy.tetsuo.entities.model.FK_MetaServiceStatusHistoryRef_MetaService" FromRole="MetaServiceStatusHistoryRef" ToRole="MetaService" />
+          <NavigationProperty Name="StatusHistory" Relationship="net.obliteracy.tetsuo.entities.model.FK_MetaServiceStatusHistoryRef_StatusHistory" FromRole="MetaServiceStatusHistoryRef" ToRole="StatusHistory" />
+        </EntityType>
+        <EntityType Name="StatusHistory">
+          <Key>
+            <PropertyRef Name="StatusHistoryID" />
+          </Key>
+          <Property Type="Int32" Name="StatusHistoryID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+          <Property Type="String" Name="StatusCode" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="StatusDetail" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ModifiedBy" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="GatewayStatusHistoryRefs" Relationship="net.obliteracy.tetsuo.entities.model.FK_GatewayStatusHistoryRef_StatusHistory" FromRole="StatusHistory" ToRole="GatewayStatusHistoryRef" />
+          <NavigationProperty Name="HubServiceStatusHistoryRefs" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubServiceStatusHistoryRef_StatusHistory" FromRole="StatusHistory" ToRole="HubServiceStatusHistoryRef" />
+          <NavigationProperty Name="HubStatusHistoryRefs" Relationship="net.obliteracy.tetsuo.entities.model.FK_HubStatusHistoryRef_StatusHistory" FromRole="StatusHistory" ToRole="HubStatusHistoryRef" />
+          <NavigationProperty Name="MetaServiceStatusHistoryRefs" Relationship="net.obliteracy.tetsuo.entities.model.FK_MetaServiceStatusHistoryRef_StatusHistory" FromRole="StatusHistory" ToRole="MetaServiceStatusHistoryRef" />
+        </EntityType>
+        <Association Name="FK_GatewayStatusHistoryRef_Gateway">
+          <End Type="net.obliteracy.tetsuo.entities.model.Gateway" Role="Gateway" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.GatewayStatusHistoryRef" Role="GatewayStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gateway">
+              <PropertyRef Name="GatewayId" />
+            </Principal>
+            <Dependent Role="GatewayStatusHistoryRef">
+              <PropertyRef Name="GatewayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Hubs_Gateways">
+          <End Type="net.obliteracy.tetsuo.entities.model.Gateway" Role="Gateway" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.Hub" Role="Hub" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gateway">
+              <PropertyRef Name="GatewayId" />
+            </Principal>
+            <Dependent Role="Hub">
+              <PropertyRef Name="GatewayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Instrumentation_Gateway">
+          <End Type="net.obliteracy.tetsuo.entities.model.Gateway" Role="Gateway" Multiplicity="0..1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.Instrumentation" Role="Instrumentation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gateway">
+              <PropertyRef Name="GatewayId" />
+            </Principal>
+            <Dependent Role="Instrumentation">
+              <PropertyRef Name="GatewayID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GatewayStatusHistoryRef_StatusHistory">
+          <End Type="net.obliteracy.tetsuo.entities.model.StatusHistory" Role="StatusHistory" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.GatewayStatusHistoryRef" Role="GatewayStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusHistory">
+              <PropertyRef Name="StatusHistoryID" />
+            </Principal>
+            <Dependent Role="GatewayStatusHistoryRef">
+              <PropertyRef Name="StatusHistoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubStatusHistoryRef_Hub">
+          <End Type="net.obliteracy.tetsuo.entities.model.Hub" Role="Hub" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.HubStatusHistoryRef" Role="HubStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hub">
+              <PropertyRef Name="HubId" />
+            </Principal>
+            <Dependent Role="HubStatusHistoryRef">
+              <PropertyRef Name="HubId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Instrumentation_Hub">
+          <End Type="net.obliteracy.tetsuo.entities.model.Hub" Role="Hub" Multiplicity="0..1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.Instrumentation" Role="Instrumentation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hub">
+              <PropertyRef Name="HubId" />
+            </Principal>
+            <Dependent Role="Instrumentation">
+              <PropertyRef Name="HubID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Spokes_Hubs">
+          <End Type="net.obliteracy.tetsuo.entities.model.Hub" Role="Hub" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.HubService" Role="HubService" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hub">
+              <PropertyRef Name="HubId" />
+            </Principal>
+            <Dependent Role="HubService">
+              <PropertyRef Name="HubId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubService_MetaService">
+          <End Type="net.obliteracy.tetsuo.entities.model.MetaService" Role="MetaService" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.HubService" Role="HubService" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetaService">
+              <PropertyRef Name="MetaServiceId" />
+            </Principal>
+            <Dependent Role="HubService">
+              <PropertyRef Name="MetaServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubServiceStatusHistoryRef_HubService">
+          <End Type="net.obliteracy.tetsuo.entities.model.HubService" Role="HubService" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.HubServiceStatusHistoryRef" Role="HubServiceStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HubService">
+              <PropertyRef Name="HubServiceId" />
+            </Principal>
+            <Dependent Role="HubServiceStatusHistoryRef">
+              <PropertyRef Name="HubServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubServiceStatusHistoryRef_StatusHistory">
+          <End Type="net.obliteracy.tetsuo.entities.model.StatusHistory" Role="StatusHistory" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.HubServiceStatusHistoryRef" Role="HubServiceStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusHistory">
+              <PropertyRef Name="StatusHistoryID" />
+            </Principal>
+            <Dependent Role="HubServiceStatusHistoryRef">
+              <PropertyRef Name="StatusHistoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HubStatusHistoryRef_StatusHistory">
+          <End Type="net.obliteracy.tetsuo.entities.model.StatusHistory" Role="StatusHistory" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.HubStatusHistoryRef" Role="HubStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusHistory">
+              <PropertyRef Name="StatusHistoryID" />
+            </Principal>
+            <Dependent Role="HubStatusHistoryRef">
+              <PropertyRef Name="StatusHistoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MetaServiceStatusHistoryRef_MetaService">
+          <End Type="net.obliteracy.tetsuo.entities.model.MetaService" Role="MetaService" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.MetaServiceStatusHistoryRef" Role="MetaServiceStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetaService">
+              <PropertyRef Name="MetaServiceId" />
+            </Principal>
+            <Dependent Role="MetaServiceStatusHistoryRef">
+              <PropertyRef Name="MetaServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MetaServiceStatusHistoryRef_StatusHistory">
+          <End Type="net.obliteracy.tetsuo.entities.model.StatusHistory" Role="StatusHistory" Multiplicity="1" />
+          <End Type="net.obliteracy.tetsuo.entities.model.MetaServiceStatusHistoryRef" Role="MetaServiceStatusHistoryRef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusHistory">
+              <PropertyRef Name="StatusHistoryID" />
+            </Principal>
+            <Dependent Role="MetaServiceStatusHistoryRef">
+              <PropertyRef Name="StatusHistoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="netobliteracytetsuoentitiesmodelStoreContainer" CdmEntityContainer="tetsuoEntities">
+          <EntitySetMapping Name="Gateways">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.Gateway">
+              <MappingFragment StoreEntitySet="Gateway">
+                <ScalarProperty Name="GatewayReplyUri" ColumnName="GatewayReplyUri" />
+                <ScalarProperty Name="LastStatusHistoryID" ColumnName="LastStatusHistoryID" />
+                <ScalarProperty Name="GatewayIsActive" ColumnName="GatewayIsActive" />
+                <ScalarProperty Name="GatewayDefaultBinding" ColumnName="GatewayDefaultBinding" />
+                <ScalarProperty Name="GatewayBaseUri" ColumnName="GatewayBaseUri" />
+                <ScalarProperty Name="GatewayName" ColumnName="GatewayName" />
+                <ScalarProperty Name="GatewayId" ColumnName="GatewayId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GatewayStatusHistoryRefs">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.GatewayStatusHistoryRef">
+              <MappingFragment StoreEntitySet="GatewayStatusHistoryRef">
+                <ScalarProperty Name="StatusHistoryId" ColumnName="StatusHistoryId" />
+                <ScalarProperty Name="GatewayId" ColumnName="GatewayId" />
+                <ScalarProperty Name="GatewayStatusHistoryRefId" ColumnName="GatewayStatusHistoryRefId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hubs">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.Hub">
+              <MappingFragment StoreEntitySet="Hub">
+                <ScalarProperty Name="LastStatusHistoryID" ColumnName="LastStatusHistoryID" />
+                <ScalarProperty Name="GatewayId" ColumnName="GatewayId" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="HubEndpoint" ColumnName="HubEndpoint" />
+                <ScalarProperty Name="HubName" ColumnName="HubName" />
+                <ScalarProperty Name="HubId" ColumnName="HubId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HubServices">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.HubService">
+              <MappingFragment StoreEntitySet="HubService">
+                <ScalarProperty Name="MetaServiceId" ColumnName="MetaServiceId" />
+                <ScalarProperty Name="LastStatusHistoryID" ColumnName="LastStatusHistoryID" />
+                <ScalarProperty Name="HubId" ColumnName="HubId" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="ClientClass" ColumnName="ClientClass" />
+                <ScalarProperty Name="HubServiceAssembly" ColumnName="HubServiceAssembly" />
+                <ScalarProperty Name="HubServiceEndpoint" ColumnName="HubServiceEndpoint" />
+                <ScalarProperty Name="HubServiceBinding" ColumnName="HubServiceBinding" />
+                <ScalarProperty Name="HubServiceContract" ColumnName="HubServiceContract" />
+                <ScalarProperty Name="HubServiceName" ColumnName="HubServiceName" />
+                <ScalarProperty Name="HubServiceId" ColumnName="HubServiceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HubServiceStatusHistoryRefs">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.HubServiceStatusHistoryRef">
+              <MappingFragment StoreEntitySet="HubServiceStatusHistoryRef">
+                <ScalarProperty Name="StatusHistoryId" ColumnName="StatusHistoryId" />
+                <ScalarProperty Name="HubServiceId" ColumnName="HubServiceId" />
+                <ScalarProperty Name="HubServiceStatusHistoryRefId" ColumnName="HubServiceStatusHistoryRefId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HubStatusHistoryRefs">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.HubStatusHistoryRef">
+              <MappingFragment StoreEntitySet="HubStatusHistoryRef">
+                <ScalarProperty Name="StatusHistoryId" ColumnName="StatusHistoryId" />
+                <ScalarProperty Name="HubId" ColumnName="HubId" />
+                <ScalarProperty Name="HubStatusHistoryRefId" ColumnName="HubStatusHistoryRefId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Instrumentations">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.Instrumentation">
+              <MappingFragment StoreEntitySet="Instrumentation">
+                <ScalarProperty Name="CorrelationID" ColumnName="CorrelationID" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="EventDetail" ColumnName="EventDetail" />
+                <ScalarProperty Name="EventType" ColumnName="EventType" />
+                <ScalarProperty Name="HubServiceID" ColumnName="HubServiceID" />
+                <ScalarProperty Name="HubID" ColumnName="HubID" />
+                <ScalarProperty Name="GatewayID" ColumnName="GatewayID" />
+                <ScalarProperty Name="InstrumentationID" ColumnName="InstrumentationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MetaServices">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.MetaService">
+              <MappingFragment StoreEntitySet="MetaService">
+                <ScalarProperty Name="LastStatusHistoryID" ColumnName="LastStatusHistoryID" />
+                <ScalarProperty Name="ServiceWsdl" ColumnName="ServiceWsdl" />
+                <ScalarProperty Name="ServiceDataContract" ColumnName="ServiceDataContract" />
+                <ScalarProperty Name="MetaServiceId" ColumnName="MetaServiceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MetaServiceStatusHistoryRefs">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.MetaServiceStatusHistoryRef">
+              <MappingFragment StoreEntitySet="MetaServiceStatusHistoryRef">
+                <ScalarProperty Name="StatusHistoryId" ColumnName="StatusHistoryId" />
+                <ScalarProperty Name="MetaServiceId" ColumnName="MetaServiceId" />
+                <ScalarProperty Name="MetaServiceStatusHistoryRefId" ColumnName="MetaServiceStatusHistoryRefId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StatusHistories">
+            <EntityTypeMapping TypeName="net.obliteracy.tetsuo.entities.model.StatusHistory">
+              <MappingFragment StoreEntitySet="StatusHistory">
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="StatusDetail" ColumnName="StatusDetail" />
+                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="StatusHistoryID" ColumnName="StatusHistoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="True" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <edmx:Diagram Name="tetsuo">
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.Gateway" Width="1.5" PointX="1.5" PointY="18.875" Height="2.9417936197916674" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.GatewayStatusHistoryRef" Width="1.5" PointX="3" PointY="5.375" Height="1.9802864583333317" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.Hub" Width="1.5" PointX="1.5" PointY="14.875" Height="2.9417936197916674" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.HubService" Width="1.5" PointX="0.75" PointY="10" Height="3.7109993489583388" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.HubServiceStatusHistoryRef" Width="1.5" PointX="3" PointY="2.375" Height="1.9802864583333388" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.HubStatusHistoryRef" Width="1.5" PointX="3" PointY="8.375" Height="1.9802864583333388" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.Instrumentation" Width="1.5" PointX="3.75" PointY="16.875" Height="2.9417936197916674" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.MetaService" Width="1.5" PointX="1.5" PointY="22.625" Height="2.172587890624996" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.MetaServiceStatusHistoryRef" Width="1.5" PointX="6" PointY="5.375" Height="1.9802864583333388" />
+        <edmx:EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.StatusHistory" Width="1.5" PointX="0.75" PointY="5" Height="2.7494921875000031" />
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_GatewayStatusHistoryRef_Gateway" >
+          <edmx:ConnectorPoint PointX="2.25" PointY="18.875" />
+          <edmx:ConnectorPoint PointX="2.25" PointY="18.066793619791667" />
+          <edmx:ConnectorPoint PointX="2.6041666666666665" PointY="18.066793619791667" />
+          <edmx:ConnectorPoint PointX="2.7708333333333335" PointY="18.066793619791667" />
+          <edmx:ConnectorPoint PointX="3.25" PointY="18.066793619791667" />
+          <edmx:ConnectorPoint PointX="3.25" PointY="10.605286458333339" />
+          <edmx:ConnectorPoint PointX="2.75" PointY="10.605286458333339" />
+          <edmx:ConnectorPoint PointX="2.75" PointY="6.3651432291666659" />
+          <edmx:ConnectorPoint PointX="2.7916666666666665" PointY="6.365143229166665" />
+          <edmx:ConnectorPoint PointX="2.9583333333333335" PointY="6.3651432291666659" />
+          <edmx:ConnectorPoint PointX="3" PointY="6.3651432291666659" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways" >
+          <edmx:ConnectorPoint PointX="2.6875" PointY="18.875" />
+          <edmx:ConnectorPoint PointX="2.6875" PointY="17.816793619791667" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_Instrumentation_Gateway" >
+          <edmx:ConnectorPoint PointX="3" PointY="19.345896809895834" />
+          <edmx:ConnectorPoint PointX="3.75" PointY="19.345896809895834" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_GatewayStatusHistoryRef_StatusHistory" >
+          <edmx:ConnectorPoint PointX="2.25" PointY="5.8075716145833329" />
+          <edmx:ConnectorPoint PointX="2.7916666666666665" PointY="5.807571614583332" />
+          <edmx:ConnectorPoint PointX="2.9583333333333335" PointY="5.8075716145833329" />
+          <edmx:ConnectorPoint PointX="3" PointY="5.8075716145833329" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_HubStatusHistoryRef_Hub" >
+          <edmx:ConnectorPoint PointX="2.53125" PointY="14.875" />
+          <edmx:ConnectorPoint PointX="2.53125" PointY="9.15625" />
+          <edmx:ConnectorPoint PointX="2.6666666666666665" PointY="9.1562499999999982" />
+          <edmx:ConnectorPoint PointX="2.9583333333333335" PointY="9.15625" />
+          <edmx:ConnectorPoint PointX="3" PointY="9.15625" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_Instrumentation_Hub" >
+          <edmx:ConnectorPoint PointX="3" PointY="17.345896809895834" />
+          <edmx:ConnectorPoint PointX="3.1666666666666665" PointY="17.345896809895834" />
+          <edmx:ConnectorPoint PointX="3.3333333333333335" PointY="17.345896809895834" />
+          <edmx:ConnectorPoint PointX="3.75" PointY="17.345896809895834" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs" >
+          <edmx:ConnectorPoint PointX="1.875" PointY="14.875" />
+          <edmx:ConnectorPoint PointX="1.875" PointY="13.710999348958339" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_HubService_MetaService" >
+          <edmx:ConnectorPoint PointX="1.5" PointY="23.711293945312498" />
+          <edmx:ConnectorPoint PointX="1.1249995" PointY="23.711293945312498" />
+          <edmx:ConnectorPoint PointX="1.1249995" PointY="13.710999348958339" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_HubServiceStatusHistoryRef_HubService" >
+          <edmx:ConnectorPoint PointX="2.25" PointY="10.001152846153847" />
+          <edmx:ConnectorPoint PointX="2.4723244349011204" PointY="9.7788284112527251" />
+          <edmx:ConnectorPoint PointX="2.5901755650988791" PointY="9.6609772810549686" />
+          <edmx:ConnectorPoint PointX="2.6910744349011204" PointY="9.5600784112527251" />
+          <edmx:ConnectorPoint PointX="2.8089255650988791" PointY="9.4422272810549686" />
+          <edmx:ConnectorPoint PointX="2.875" PointY="9.3761528461538468" />
+          <edmx:ConnectorPoint PointX="2.875" PointY="3.3651432291666694" />
+          <edmx:ConnectorPoint PointX="3" PointY="3.3651432291666694" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_HubServiceStatusHistoryRef_StatusHistory" >
+          <edmx:ConnectorPoint PointX="1.5" PointY="5" />
+          <edmx:ConnectorPoint PointX="1.5" PointY="3.8914673437500049" />
+          <edmx:ConnectorPoint PointX="2.7916666666666665" PointY="3.8914673437500045" />
+          <edmx:ConnectorPoint PointX="2.9583333333333335" PointY="3.8914673437500049" />
+          <edmx:ConnectorPoint PointX="3" PointY="3.8914673437500049" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_HubStatusHistoryRef_StatusHistory" >
+          <edmx:ConnectorPoint PointX="2.25" PointY="7.7494921875000031" />
+          <edmx:ConnectorPoint PointX="2.375" PointY="8.1244921875000031" />
+          <edmx:ConnectorPoint PointX="2.375" PointY="7.7488471538461541" />
+          <edmx:ConnectorPoint PointX="2.6910744349011213" PointY="8.0649215887472732" />
+          <edmx:ConnectorPoint PointX="2.8089255650988791" PointY="8.1827727189450314" />
+          <edmx:ConnectorPoint PointX="2.8160744349011213" PointY="8.1899215887472732" />
+          <edmx:ConnectorPoint PointX="2.9339255650988791" PointY="8.3077727189450314" />
+          <edmx:ConnectorPoint PointX="3.0011528461538459" PointY="8.375" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_MetaServiceStatusHistoryRef_MetaService" >
+          <edmx:ConnectorPoint PointX="3" PointY="23.711293945312498" />
+          <edmx:ConnectorPoint PointX="6.75" PointY="23.711293945312498" />
+          <edmx:ConnectorPoint PointX="6.75" PointY="7.3552864583333388" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_MetaServiceStatusHistoryRef_StatusHistory" >
+          <edmx:ConnectorPoint PointX="2.25" PointY="5" />
+          <edmx:ConnectorPoint PointX="2.625" PointY="4.625" />
+          <edmx:ConnectorPoint PointX="2.625" PointY="5" />
+          <edmx:ConnectorPoint PointX="2.7916666666666665" PointY="4.9999999999999991" />
+          <edmx:ConnectorPoint PointX="2.9583333333333335" PointY="5" />
+          <edmx:ConnectorPoint PointX="5.625" PointY="5" />
+          <edmx:ConnectorPoint PointX="6" PointY="5.375" />
+        </edmx:AssociationConnector>
+      </edmx:Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,84 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.ServiceProcess;
+using System.Text;
+using net.obliteracy.tetsuo.core.services;
+using System.ServiceModel;
+using System.ServiceModel.Description;
+using System.ServiceModel.Channels;
+using System.Data.SqlClient;
+using System.Configuration;
+
+namespace net.obliteracy.tetsuo.broker
+{
+    public partial class TTSBroker : ServiceBase
+    {
+        static List<ServiceResolverGateway> gateways = new List<ServiceResolverGateway>();
+        static List<ServiceHost> Hosts =
+            new List<ServiceHost>();
+        public TTSBroker()
+        {
+            InitializeComponent();
+            this.AutoLog = true;
+            this.CanStop = true;
+            this.CanPauseAndContinue = false;
+            
+        }
+
+        protected override void OnStart(string[] args)
+        {
+            InitializeGateways();
+
+            //if (gateways[0].ResolveHub("net.tcp://localhost:9000/service/Hub1"))
+            //{
+            //    ServiceHub hub = gateways[0].CurrentHub;
+            //    Console.WriteLine(hub.Name + ": " + hub.DestinationAddress);
+            //}--TESTING
+        }
+
+        protected override void OnStop()
+        {
+            for (int j = 0; j < gateways.Count; j++)
+            {
+                gateways[j].OnShutdownGateway();
+                Hosts[j].Close();
+            }
+        }
+
+        protected void InitializeGateways()
+        {
+            int i = 0;
+            BindingElement bElement = new TcpTransportBindingElement();
+            System.ServiceModel.Channels.Binding binding = new CustomBinding(bElement);
+            SqlConnection conn =
+                new SqlConnection(
+                    ConfigurationManager.ConnectionStrings["mexData"].ConnectionString);
+            SqlCommand comm = new SqlCommand();
+            SqlDataReader dr;
+            comm.CommandText = "SELECT * from Gateways";
+            comm.CommandType = System.Data.CommandType.Text;
+            comm.Connection = conn;
+            conn.Open();
+            dr = comm.ExecuteReader();
+            while (dr.Read())
+            {
+                ServiceResolverGateway gateway = new ServiceResolverGateway();
+                Hosts.Add(new ServiceHost(typeof(ServiceResolverGateway),
+                    new Uri(dr[2].ToString())));
+                Hosts[i].AddServiceEndpoint("net.obliteracy.tetsuo.core.contracts.IServiceResolverGateway",
+                    binding, dr[2].ToString());
+                Hosts[i].Description.Behaviors.Add(new ServiceMetadataBehavior());
+                Hosts[i].AddServiceEndpoint(typeof(IMetadataExchange),
+                    binding, "MEX");
+                gateway.OnInitializeGateway("net.obliteracy.tetsuo.core.contracts.IServiceHub",
+                    new Uri(dr[2].ToString()));
+                gateways.Add(gateway);
+                Hosts[i].Open();
+            }
+            conn.Close();
+        }
+    }
+}

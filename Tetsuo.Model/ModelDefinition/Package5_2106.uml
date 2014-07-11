@@ -1,0 +1,1078 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6c0f67b0-ab2d-4f98-a206-02597577ebd0"
+  name="Common"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6840f531-ab80-4790-8b5f-a5df72d52926"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Tetsuo.Core.Common"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f112d144-5a12-4192-a209-83f6d71e3526"
+        name="InspectedMessageHeaderEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3600104e-92f7-4a7d-b4bd-d57b0e3e25e8"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bfdf38d4-7f3f-4615-bc52-d68520394ada"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e9600b5-55cd-4320-853c-7fd19a415483">
+                <propertyInstance
+                  Id="02a9bbbe-7e2f-4940-ab8e-7eb3eceddf49"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6db0e26a-a5ea-4de9-9390-c3a60724e435">
+                <propertyInstance
+                  Id="6fe92448-2c4c-456a-a219-32df63f4479c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f2c21e4e-d0fd-4bd3-85d2-1c094e281b0e">
+                <propertyInstance
+                  Id="e4807f62-a2be-4006-8be7-7e768f904405"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77060a32-7b3f-4682-984a-333ac32efba0">
+                <propertyInstance
+                  Id="43d980f8-d669-4da9-aa4a-231d75179606"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4e437fc8-a809-4cfd-9bcc-c1d31ad2f949">
+                <propertyInstance
+                  Id="dfd75425-d6da-4aa3-9d08-6e8fc6f022b9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="9659d097-6820-4c72-8df1-9f8a2b4802b7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="37c44eb3-b30f-4af8-a238-73c6b5b0ac43"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package2_2106.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="939ec2e1-92a7-4859-80b0-2b9723d49354"
+            isDerived="false"
+            sourceEndRoleName="InspectedMessageHeaderEventArgs"
+            targetEndRoleName="StatusCode"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="453d3813-53a0-485e-8343-18ca976f9ecf"
+              LastKnownName="TransmissionStatusCodes"
+              LastKnownLocation="Package1_2106.uml" />
+            <description>Property StatusCode references type TransmissionStatusCodes.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a29d06d-f171-44f6-8f16-7f5259940c4a"
+                  name="InspectedMessageHeaderEventArgs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7c11f962-991a-48e3-8675-2d10ee709adb"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b09e7683-b1bd-4f89-8221-a6add78961aa"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f6769f06-e544-43dd-83b3-66999c2f828c"
+                  name="StatusCode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7e2b175a-b559-4cb6-b985-75cc02146995"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="911c2bd0-8bad-489b-b157-ee9f8230e692"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2f7d657f-980a-4aad-963d-1a6285891fa4"
+            name="Hub"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ddb4bdfc-f3bf-43b7-8399-3c16f97e2661"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs Member=Hub"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fdf20019-00d6-4324-a904-d2595474b0c0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="598ca51d-fa6b-4e86-876f-1ac45cb4a598">
+                    <propertyInstance
+                      Id="42b92bcd-283b-4727-8b6e-a1a5f0ac1178"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="781d3bd8-e1de-4516-b1a0-ea2b5732dfb5">
+                    <propertyInstance
+                      Id="6a943b28-7cd6-4b6f-8b55-f88568fed617"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cf33b9f-7940-4425-9190-7a221be8a7c2">
+                    <propertyInstance
+                      Id="c9a15fe1-d811-45cd-b0f9-677a11e46407"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a04185a-c50a-430a-8c8f-660314e3bde0">
+                    <propertyInstance
+                      Id="19eb898d-0fb6-4239-9a34-30ed204054b0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d74310e8-b093-4dab-a836-76a6c56d723e">
+                    <propertyInstance
+                      Id="4be8554e-f7e1-4cff-9890-b4fad5ade45d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fd87323-2ed4-4115-9e80-f78ef86ef3b9">
+                    <propertyInstance
+                      Id="3a3ccc83-73e1-4432-9cb1-be431583c9a9"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Tetsuo.Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="87be599f-0889-4b4e-959a-9e7290ca0d49"
+            name="Spoke"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cf4ab685-6131-4188-8795-954e5a04fbc7"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs Member=Spoke"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="57ce81c7-9b79-415c-8df3-9fdaf757185a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="619e5512-c0f8-4c50-89df-1e880ec85502">
+                    <propertyInstance
+                      Id="5163d093-eeb9-4f64-9f60-fc4f2374da33"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3efbbf9-04f4-40bd-9545-8c2c8a89d942">
+                    <propertyInstance
+                      Id="bb4112d6-4dbd-47c1-a686-03f1e2fd7572"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c413bec-e563-46e4-8cce-91e9fcc67738">
+                    <propertyInstance
+                      Id="bf98930a-9009-45cb-86cd-f2c6efd1afa3"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1eb3abdb-4877-406a-a9ac-218143a2ddfe">
+                    <propertyInstance
+                      Id="915c17cc-05ec-49ff-8852-352d024c2ff6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="951e54f1-a654-436c-9d93-213df39714af">
+                    <propertyInstance
+                      Id="aa2eadc1-2b8c-45a6-9426-49cf0985bcef"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e012ea9-9229-412c-a4d4-856e0563d7f0">
+                    <propertyInstance
+                      Id="ce1c210a-3b36-45cd-ba2d-e18eb2c93f63"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Tetsuo.Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0628d6c1-7e75-4d17-8593-1bed01bb591e"
+            name="StatusCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d51b0080-1162-4105-86ac-55c2d3fa0ab1"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs Member=StatusCode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="52de0ef2-4f40-4cc9-80ab-6c247bf2c4a9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80bb917d-45f3-418e-8b66-b3abac6ef257">
+                    <propertyInstance
+                      Id="74010156-73ac-4890-8454-236555d98dbe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="890d775a-eaa3-462a-9c0c-405aadcc949a">
+                    <propertyInstance
+                      Id="a665778b-6fe5-4493-b33a-09fcd5017d75"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c72c6844-64eb-4f71-8ffb-546e0cc907d8">
+                    <propertyInstance
+                      Id="69abd972-95c5-47fc-a4c1-0f87f7245a00"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9efddb44-1f6d-4dc6-a005-b44369d7e8b4">
+                    <propertyInstance
+                      Id="9bbd7b99-057b-4e67-8e04-b31b3a7fef4e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e3096f3-54d6-483a-b053-1be074e49ed8">
+                    <propertyInstance
+                      Id="797c14fc-8214-4fd5-b1e3-275691854963"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="610a44af-d5cd-49fe-a421-ed0957a1699c">
+                    <propertyInstance
+                      Id="2de26a39-29fa-4760-a23f-3476967ba6f8"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="453d3813-53a0-485e-8343-18ca976f9ecf"
+                LastKnownName="TransmissionStatusCodes"
+                LastKnownLocation="Package1_2106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c31ec11c-794a-43cb-b26b-15c3f5b36f20"
+            name="InspectedMessageHeaderEventArgs"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b5aa6130-4653-4f33-a806-7398d28257ec"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ca347920-8db4-4b31-8080-2f1d2f2c4674"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4811a8e-3bb6-4d94-8b8e-0f444bffbe05">
+                    <propertyInstance
+                      Id="f38e5a2d-33c7-4c80-b871-c01c7f59c5f9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9d3731d-fce6-41ff-8aad-786a573c0eb6">
+                    <propertyInstance
+                      Id="5baa8aab-b403-47e6-b4dd-e44cd0378e3c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1227a3a-c44a-47b4-8dae-4eca441cfa0d">
+                    <propertyInstance
+                      Id="0f2f5638-4d53-492d-b04f-a8e50b70b4d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fef96dd-80c5-451c-9168-35301902bb67">
+                    <propertyInstance
+                      Id="93127876-bfa3-41fb-b052-f117d13a6282"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e0358bf-bea4-4f0c-96d0-8e0e22c6c460">
+                    <propertyInstance
+                      Id="9828c053-74ed-467b-9244-88ff4b097791"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="14d024e1-741b-4295-b523-56af1fc32c5a"
+        name="OperationSelector"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="417d7607-ed8d-4760-ad2e-a3df9f04ae68"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=OperationSelector"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="01107c1a-b28e-4a6a-82c6-9f0e08983f6f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="11701f0c-1bdf-49cb-a67c-aa0659189926">
+                <propertyInstance
+                  Id="7293d70f-5c2c-4c42-9281-492d564e1ee0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="52a4d5b2-a956-4f4e-a35c-96e0791e34a9">
+                <propertyInstance
+                  Id="d64a0070-6ff2-4de7-8ba0-4c2d3fcead75"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f97a8d8-1fc1-41f6-aa6c-f2b28204b838">
+                <propertyInstance
+                  Id="881a3d8b-021c-4ad6-9151-bd489f14aa16"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="619e8ab5-0878-44d7-b1f2-a106ab28e4e1">
+                <propertyInstance
+                  Id="ef794556-7638-44db-bcbe-abf2bfd27061"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bdffdb9e-14f7-42ce-8e79-d6be08deb657">
+                <propertyInstance
+                  Id="62f3c49d-01c3-4827-99b4-f8abcbbc1400"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="10ed40de-e3fa-425d-bd2f-c63c201effb9">
+            <interfaceMoniker
+              Id="a779566e-705a-463b-8194-b1f56e1346bc"
+              LastKnownName="IDispatchOperationSelector"
+              LastKnownLocation="Package8_2106.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2e881c00-5fec-4e6d-9859-0fd27b2fcf1b"
+            name="SelectOperation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b3f2fcdd-faf6-40e4-b8a1-718e961d0c2f"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=OperationSelector Member=(Name=SelectOperation OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.ServiceModel.dll&quot; Namespace=System.ServiceModel.Channels Type=Message)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c1bf9969-ef9b-4c31-b3db-93078ca727b9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e445fc3a-9a90-4315-a4e8-43de9d7a9b5e">
+                    <propertyInstance
+                      Id="4850f6cb-91ca-4359-982a-0b058e13755a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32da58eb-a721-431a-ad63-90392c210c1b">
+                    <propertyInstance
+                      Id="add326ce-af5b-4f20-8bdf-fdcafdf7cc47"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8ab8b3d-2681-4a2c-9ba1-71d08664a7f7">
+                    <propertyInstance
+                      Id="9ec91553-d722-4188-975a-89f92e8a89be"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d62a2e34-c865-49ce-9189-c37f8a5a0fe2">
+                    <propertyInstance
+                      Id="7f112387-cf2f-494a-8d1d-024985a0cebc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0d5e4bb-30be-4a6d-aaa6-9eedf01ad683">
+                    <propertyInstance
+                      Id="7c001807-22ca-4225-aeb4-f4704941361f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5339965e-191a-4792-818a-38a48dc3a529"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Tetsuo.Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fae40e36-79b1-491f-8c98-2cc67e5a48b3"
+                  name="message"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="3cdc963c-6e93-429f-98a5-7fdb0bb97fd6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=OperationSelector Member=(Name=SelectOperation OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.ServiceModel.dll&quot; Namespace=System.ServiceModel.Channels Type=Message)]) ParameterIdentifier=message"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="222ad42b-ba94-4fa6-bd3b-fe026bb5e587"
+                      LastKnownName="Message"
+                      LastKnownLocation="Package7_2106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7a5d9116-8b4b-4142-ba00-a79fc8c8e629"
+            name="OperationSelector"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b376767f-d21b-4dbb-b071-722fa3e369fc"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=OperationSelector Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="895aa222-23c1-4dd0-8a98-17e9cacc8578"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="323e9123-e5a7-475e-bfe2-198a3a833e96">
+                    <propertyInstance
+                      Id="c4ecf785-e3ab-4200-b1f0-a9d3785a83b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b74f8f7b-09e7-4b20-b41f-ff871357256a">
+                    <propertyInstance
+                      Id="8a25401d-a1fb-4e66-a81a-d0e7911479ec"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44096ee3-f33c-423a-af7b-02d88afd456a">
+                    <propertyInstance
+                      Id="7afd938d-d0fe-44cb-8e15-026d7b1be3e2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8eade37-fcde-449b-92e7-71866daf3361">
+                    <propertyInstance
+                      Id="469536c3-1462-45cf-b241-147e8a48b4a8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bba8641-a403-4075-933d-b33479fff42a">
+                    <propertyInstance
+                      Id="4112efbb-d5f8-4596-9d38-ec5042d66de6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d44c7479-15ad-4474-bfa4-a6bf38552781"
+        name="RouteDispatcherEventBus"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="bfb728ce-a0e9-48e4-a298-cb566592d308"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=RouteDispatcherEventBus"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cc6b8445-5d0b-40b5-907e-64fa3ea9ccca"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13069465-5fa2-42ab-9da6-81d9d1aa608f">
+                <propertyInstance
+                  Id="32fa5337-3be9-4774-a188-5b999196166a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="594c1b10-844a-4184-bb57-b21a0313bba8">
+                <propertyInstance
+                  Id="b17ccb1f-edd0-4bfa-9163-4c66e04d98a5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7fb6778-afe9-4dcd-b25f-187c144709d2">
+                <propertyInstance
+                  Id="34479e0e-e247-40bc-82f5-d6d2d9a5ce27"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4d27c9b6-22d6-4a99-8811-82024501e19f">
+                <propertyInstance
+                  Id="b384d44e-6029-4ab0-9cc6-b052617a4f57"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e51b7f89-324c-4b11-aebc-dc7aba6718f7">
+                <propertyInstance
+                  Id="83cd0cc4-4c38-4cb6-b407-5fe16c2902ba"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="d53e280a-0109-4988-8e9c-172207b91406"
+            name="OnMessageHeaderInspected"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5e149868-6771-4536-b31a-ae6f63c16e15"
+                handle="viewcode://./CodeSchema_Event?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=RouteDispatcherEventBus Member=OnMessageHeaderInspected"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="347947da-0f1d-484e-9fc8-0a76ac1d43be"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d889fdc-0757-40d9-ad74-d7a050b43cfc">
+                    <propertyInstance
+                      Id="339df112-71e8-4d24-af49-ea8860a0dd37"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64aa0502-cc4f-4b98-9313-9e54139dc2ff">
+                    <propertyInstance
+                      Id="7411f5b6-8ec0-49c9-b1d0-b4aa87e99141"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78e29981-ba20-4e1b-b229-108abc3c67f9">
+                    <propertyInstance
+                      Id="3ca54fde-0328-4c9e-9201-7212d7b24d16"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f775c53-4296-4fee-9e35-a3b537913f79">
+                    <propertyInstance
+                      Id="3c099d98-9926-4cab-96aa-bf014879207d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d1aae21-addd-4dbf-a52e-7eb1591a95c5">
+                    <propertyInstance
+                      Id="eff87a8a-0a2d-4169-bf17-655d088c35b8"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="958b06fd-d6a9-41c8-9183-b5d39f0fdf8d"
+                LastKnownName="MessageHeaderInspected"
+                LastKnownLocation="Package5_2106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0e71e7a8-0ce9-4b76-9bee-d96140ee1996"
+            name="InspectMessage"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="03d30288-e998-42b2-a62f-dfb4a09adc81"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=RouteDispatcherEventBus Member=(Name=InspectMessage OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="81c31b10-43c2-4bb2-8c2c-90cba3c3cefd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ba1bc38-7bd1-49fc-b0d1-aa5133b67105">
+                    <propertyInstance
+                      Id="3cbe3847-007b-43a8-9f56-daa392a9e98a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00f3ae20-2d4d-44f0-b8bf-5c325f42a3e9">
+                    <propertyInstance
+                      Id="a74dfa48-d632-4caf-bcbf-85e554a38968"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45b9cff1-1b72-43c4-b38b-096a5d11bd70">
+                    <propertyInstance
+                      Id="ed6a581f-303d-42ec-822b-a58a22ee4256"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="426083df-53cc-426e-aeaa-5b874bebb5d2">
+                    <propertyInstance
+                      Id="12ff753b-3883-4597-9b70-dd1551f2063c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ca4205d-a8a4-4a5d-a336-7f60178c9700">
+                    <propertyInstance
+                      Id="cca1a329-f688-4375-ad0c-de8d0dc78893"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0dabad5d-9bec-47d7-8166-0eda9bf13983"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="387d0a9c-f34e-45bd-9720-dcd470bb54a8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=RouteDispatcherEventBus Member=(Name=InspectMessage OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c87ef8ad-ac9b-4811-90b6-cae36e4b1af3"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_2106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4fccbd01-7a4a-4dd1-94ac-f2c1483ab881"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2523add7-2f72-4a50-803f-0e82a075c66c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=RouteDispatcherEventBus Member=(Name=InspectMessage OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f112d144-5a12-4192-a209-83f6d71e3526"
+                      LastKnownName="InspectedMessageHeaderEventArgs"
+                      LastKnownLocation="Package5_2106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="84515358-9348-48db-ab04-529338f8223a"
+            name="RouteDispatcherEventBus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3bfa0808-3d3c-400d-976b-03c7d598b57a"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=RouteDispatcherEventBus Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a0f35b7e-b41c-4dcf-b05e-83e3e4334873"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbca9f99-5763-4a2f-8ba3-0cb91b95f200">
+                    <propertyInstance
+                      Id="1d469c16-ffd8-42d4-80c0-36e0e06effa3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84cd5df8-d150-4122-9e9b-78d3a507c69c">
+                    <propertyInstance
+                      Id="7722e138-c180-4a65-bdc0-01ad6e6ebcf5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9361071c-3d9d-4635-b282-b912e6e25b57">
+                    <propertyInstance
+                      Id="1ebed533-40ae-461e-aba2-63f9c66284d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf4ab34a-a7e1-4edc-ad2e-d101b5ee0387">
+                    <propertyInstance
+                      Id="8458f934-b5a8-482e-a0cd-06ef39ed3691"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a322bb0-0427-4fa7-8bdd-064db0de3e35">
+                    <propertyInstance
+                      Id="c7b3e3cc-17b2-4ad5-a39f-03615aae1a52"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="958b06fd-d6a9-41c8-9183-b5d39f0fdf8d"
+        name="MessageHeaderInspected"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a5bd4843-c259-40bd-96d7-2a2552e89bae"
+            handle="viewcode://./CodeSchema_Delegate?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=(Name=MessageHeaderInspected ParentType=RouteDispatcherEventBus)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d01b1a1f-31f5-4cc8-be51-e4475517d110"
+            name="delegate"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45357cd2-242f-48c0-89e2-47b423802fa8">
+                <propertyInstance
+                  Id="4494ce67-b28f-4ad5-a1ac-59ac8deff7d0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fd06de8a-bc59-4c37-8663-132080c76338">
+                <propertyInstance
+                  Id="dcbcee6a-d978-4d90-94e9-d5bfa6c6e057"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c957064-241e-49ac-bec9-5b589c7c2b0b">
+                <propertyInstance
+                  Id="887b04b3-39c7-4bb9-b701-34bb5b6ff305"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fc633a27-d2d8-4eed-8666-c965f59b7b1c"
+            name="Invoke"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e1c8b1f6-e206-461a-af77-a8f044205eba"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=(Name=MessageHeaderInspected ParentType=RouteDispatcherEventBus) Member=(Name=Invoke OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="00aeacea-2771-4c14-883a-10da9dbc8d63"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ae4667b-b64e-4ce3-875b-a3bf9a5b4dfd">
+                    <propertyInstance
+                      Id="dbee6ede-e4e8-4d6a-9129-0fb5c8683974"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e5f1eea-6c19-4d98-ba1a-128fae41cb15">
+                    <propertyInstance
+                      Id="a8ffa83b-ab45-4683-a009-ca007186fbd9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2809638-114d-474e-9bd0-c6b0f63cd296">
+                    <propertyInstance
+                      Id="3f41fc9b-be0b-4618-90b9-acb97c5f1ba7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96e6170a-7087-484c-acc0-7205b4a5843d">
+                    <propertyInstance
+                      Id="c89b4929-26eb-41a5-b35c-42c1f0b3f0f1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="243a474f-3211-4e3f-a9f4-99e591c97f6c">
+                    <propertyInstance
+                      Id="f2cb028c-efed-4083-be23-d6df2411cbc1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f825f90-b2e9-49f6-98c1-92c83f357737"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d813a04f-3f47-4c70-b56f-ae2f24b8390b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=(Name=MessageHeaderInspected ParentType=RouteDispatcherEventBus) Member=(Name=Invoke OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c87ef8ad-ac9b-4811-90b6-cae36e4b1af3"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_2106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aaf4b3f1-fbc3-456c-956a-415d022a95cd"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8f2c43c5-ba6e-4f10-927a-7e677017e266"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=(Name=MessageHeaderInspected ParentType=RouteDispatcherEventBus) Member=(Name=Invoke OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.core/bin/Debug/Tetsuo.Core.dll Namespace=Tetsuo.Core.Common Type=InspectedMessageHeaderEventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f112d144-5a12-4192-a209-83f6d71e3526"
+                      LastKnownName="InspectedMessageHeaderEventArgs"
+                      LastKnownLocation="Package5_2106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="848c05ba-8988-4664-bb88-53d66ebd779e"
+  name="Tetsuo"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="fc189e9a-1077-404b-9480-570614677341"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Tetsuo"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f0049c0a-1584-464f-bd11-087f0cd74ff8"
+        LastKnownName="Common"
+        LastKnownLocation="Package1_2106.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2d960f08-baaa-4c8f-a8b4-318b76580552"
+        LastKnownName="Core"
+        LastKnownLocation="Package4_2106.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f6ce693e-ea8b-4ba7-8b4c-904bfe3adfd7"
+        LastKnownName="Services"
+        LastKnownLocation="Package_2108.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4f33f2eb-5a60-4846-8600-abc0a0c1f5d8"
+        LastKnownName="Entities"
+        LastKnownLocation="Package3_2108.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9c17be2a-cb3f-4d2e-9e19-3b31deff714c}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>Tetsuo.Model</Name>
+    <RootNamespace>Tetsuo.Model</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="ModelDefinition\Package1_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2107.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2108.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2107.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2108.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2107.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2108.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2107.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2108.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package8_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2106.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2107.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2108.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Tetsuo.Core.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Tetsuo.Core.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Tetsuo.Core.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Tetsuo.Model.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\net.obliteracy.tetsuo.core\Tetsuo.Core.csproj">
+      <Name>Tetsuo.Core</Name>
+      <Project>{e3c91b87-b248-46f4-90ef-8a7162598c38}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\net.obliteracy.tetsuo.flatline\Tetsuo.Flatline.csproj">
+      <Name>Tetsuo.Flatline</Name>
+      <Project>{2f3791e2-770c-456c-9e28-aaafb229bddf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\net.obliteracy.tetsuo.resusitator\Tetsuo.Resusitator.csproj">
+      <Name>Tetsuo.Resusitator</Name>
+      <Project>{8720f0dd-61aa-44b9-8bb4-0ba15efa9654}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tetsuo.Common\Tetsuo.Common.csproj">
+      <Name>Tetsuo.Common</Name>
+      <Project>{2e86e254-8538-4150-85b7-33a533c0c46c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tetsuo.Services\Tetsuo.Services.csproj">
+      <Name>Tetsuo.Services</Name>
+      <Project>{e0d18455-b946-4bc3-a47a-ac54c9581a76}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layers.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f655e67c-24af-4163-ab51-f24c72995e73"
+  name="ServiceModel"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b067933d-a3db-4cff-8916-18055b0b0fe2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=System.ServiceModel"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="608852de-8062-4734-8180-f14f7b2e00ec"
+        LastKnownName="Channels"
+        LastKnownLocation="Package7_2106.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="160f9b31-1b0d-4af5-94dc-38ae354d6120"
+        LastKnownName="Dispatcher"
+        LastKnownLocation="Package8_2106.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a2947606-beb8-4a6d-b821-891594fcbe5b"
+        name="ServiceHost"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="37c2b6f5-838d-46c5-b7df-145b8a142112"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.ServiceModel.dll&quot; Namespace=System.ServiceModel Type=ServiceHost"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="60eafe2e-e8a7-42a0-ba35-79887dce9a07"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="65300558-b7db-4a8e-806c-75fb1b0a6fad">
+                <propertyInstance
+                  Id="7d9d26ca-d7fe-4191-82e6-f86180935ed5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c6820eea-3cd1-4327-99f4-39e71e05e571">
+                <propertyInstance
+                  Id="6d985126-64a9-41d7-9bb1-2ff44509b9fc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="93ec11d8-81fe-44bb-81b7-d554669df11d">
+                <propertyInstance
+                  Id="0f46141b-a3d4-4c3b-b9de-53edb41efd23"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4854e3a8-9657-4cbc-9700-4546fe59c12e">
+                <propertyInstance
+                  Id="94537afc-7736-4589-a333-5cdc031bc332"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ee738166-f2e7-4980-89e6-0ba7a81625cf">
+                <propertyInstance
+                  Id="082dc308-7727-4f31-b155-9ae53d07fbfc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2b183922-a34f-438a-97b8-f3bd69fecc17"
+        LastKnownName="MsmqIntegration"
+        LastKnownLocation="Package3_2107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="130cd99c-c9e5-4759-9866-fa95e488c214"
+        LastKnownName="Description"
+        LastKnownLocation="Package4_2107.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

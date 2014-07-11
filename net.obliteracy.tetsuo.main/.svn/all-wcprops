@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.main
+END
+DefaultServiceResolver.svc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.main/DefaultServiceResolver.svc
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.main/Web.config
+END
+net.obliteracy.tetsuo.main.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.main/net.obliteracy.tetsuo.main.csproj.user
+END
+IDefaultServiceResolver.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.main/IDefaultServiceResolver.cs
+END
+DefaultServiceResolver.svc.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.main/DefaultServiceResolver.svc.cs
+END
+net.obliteracy.tetsuo.main.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.main/net.obliteracy.tetsuo.main.csproj
+END

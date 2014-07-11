@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace net.obliteracy.tetsuo.entities
+{
+    public class EntityManager
+    {
+        public List<Spoke> GetSpokesByHub(Guid hubId)
+        {
+            using (tetsuoEntities te = new tetsuoEntities())
+            {
+                return te.Spoke.Where(x => x.Hub.HubId == hubId).ToList();
+            }
+        }
+
+        public List<Hub> GetHubsByGateway(Guid gatewayId)
+        {
+            using (tetsuoEntities te = new tetsuoEntities())
+            {
+                return te.Hub.Where(x => x.Gateway.GatewayId == gatewayId).ToList();
+            }
+        }
+
+        public List<Hub> GetHubsByGateway(Uri address)
+        {
+            using (tetsuoEntities te = new tetsuoEntities())
+            {
+                return te.Hub.Where(x => x.Gateway.GatewayBaseUri == address.OriginalString).ToList();
+            }
+        }
+
+        public List<Gateway> GetGateways()
+        {
+            using (tetsuoEntities te = new tetsuoEntities())
+            {
+                return te.Gateway.ToList();
+            }
+        }
+
+        public Gateway GetGateway(Guid gatewayId)
+        {
+            using (tetsuoEntities te = new tetsuoEntities())
+            {
+                return te.Gateway.Where(x => x.GatewayId == gatewayId).FirstOrDefault();
+            }
+        }
+    }
+}

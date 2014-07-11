@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <connectionStrings>
+    <add name="tetsuoEntities" connectionString="metadata=res://*/model.tetsuo.csdl|res://*/model.tetsuo.ssdl|res://*/model.tetsuo.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=(local);Initial Catalog=tetsuo;Integrated Security=True;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
+    <add name="mexData" connectionString="Server=BASSMAN-RPC-1\SQLEXPRESS;Initial Catalog=HSSI;Integrated Security=True;"/>
+  </connectionStrings>
+  <system.serviceModel>
+    <client />
+    <bindings>
+      <basicHttpBinding>
+        <binding name="HrServiceClientBinding" />
+        <binding name="NewBinding1">
+          <security mode="None" />
+        </binding>
+        <binding name="NewBinding2" />
+      </basicHttpBinding>
+      <netTcpBinding>
+        <binding name="TcpBindingConfig" />
+      </netTcpBinding>
+      <wsHttpBinding>
+        <binding name="HrServiceBinding" bypassProxyOnLocal="true">
+          <security mode="TransportWithMessageCredential" />
+        </binding>
+        <binding name="NewBinding0">
+          <security mode="TransportWithMessageCredential">
+            <transport clientCredentialType="None" />
+            <message clientCredentialType="None" />
+          </security>
+        </binding>
+      </wsHttpBinding>
+    </bindings>
+
+    <services>
+      <service behaviorConfiguration="net.obliteracy.tetsuo.DSGBehavior" name="net.obliteracy.tetsuo.DefaultServiceResolver">
+        <clear />
+
+        <endpoint address="mex" binding="mexHttpBinding" name="MexEndpoint"
+          contract="IMetadataExchange" listenUriMode="Explicit" />
+        <endpoint address="Port1" binding="basicHttpBinding" 
+          contract="net.obliteracy.tetsuo.core.contracts.IServiceHub" bindingConfiguration="NewBinding1"  />
+        <endpoint address="Port2" binding="basicHttpBinding" 
+          contract="net.obliteracy.tetsuo.core.contracts.IServiceHub"  />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:3198/service" />
+          </baseAddresses>
+        </host>
+      </service>
+    </services>
+    <behaviors>
+      <endpointBehaviors>
+        <behavior name="HrServiceEndpointBehavior">
+          <webHttp />
+          <enableWebScript />
+          <synchronousReceive />
+        </behavior>
+      </endpointBehaviors>
+      <serviceBehaviors>
+        <behavior name="net.obliteracy.tetsuo.DSGBehavior">
+          <serviceMetadata httpGetEnabled="true" />
+          <serviceDebug includeExceptionDetailInFaults="true" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+</configuration>

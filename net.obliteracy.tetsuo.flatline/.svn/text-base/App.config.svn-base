@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<configuration>
+    <system.serviceModel>
+        <behaviors>
+            <serviceBehaviors>
+                <behavior name="net.obliteracy.tetsuo.flatline.Service1Behavior">
+                    <serviceMetadata httpGetEnabled="true"/>
+                    <serviceDebug includeExceptionDetailInFaults="false"/>
+                </behavior>
+            </serviceBehaviors>
+        </behaviors>
+        <services>
+            <service behaviorConfiguration="net.obliteracy.tetsuo.flatline.Service1Behavior" name="net.obliteracy.tetsuo.flatline.Service1">
+                <endpoint address="" binding="wsHttpBinding" contract="net.obliteracy.tetsuo.flatline.IService1">
+                    <identity>
+                        <dns value="localhost"/>
+                    </identity>
+                </endpoint>
+                <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+                <host>
+                    <baseAddresses>
+                        <add baseAddress="http://localhost:8731/Design_Time_Addresses/net.obliteracy.tetsuo.flatline/Service1/"/>
+                    </baseAddresses>
+                </host>
+            </service>
+        </services>
+    </system.serviceModel>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e1680b05-ef93-4948-a1e5-4801ca569ed6" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="7fb83795-2a27-4287-9a2f-936e8afdef28" name="Tetsuo.Core">
+      <references>
+        <reference Id="a14880ed-c21c-4a28-9376-f851d057f198" name="Tetsuo.Core">
+          <ArtifactNode Label="Tetsuo.Core" Category="CodeSchema_Project" Id="(Assembly=../net.obliteracy.tetsuo.core/Tetsuo.Core.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Tetsuo.Core)" Label="Tetsuo.Core.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="c71a46b1-6faa-43f7-82a3-3f6fce546002" name="Tetsuo.Services">
+      <references>
+        <reference Id="2fdf79e4-5a27-4b18-8342-d0988d0d669e" name="Tetsuo.Services">
+          <ArtifactNode Label="Tetsuo.Services" Category="CodeSchema_Project" Id="(Assembly=../Tetsuo.Services/Tetsuo.Services.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Tetsuo.Services)" Label="Tetsuo.Services.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="1553bd6e-3914-4341-a618-5242ba212849" name="Tetsuo.Common">
+      <references>
+        <reference Id="9d12863e-5b80-4c37-a67a-e8f6e96a87a3" name="Tetsuo.Common">
+          <ArtifactNode Label="Tetsuo.Common" Category="CodeSchema_Project" Id="(Assembly=../Tetsuo.Common/Tetsuo.Common.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Tetsuo.Common)" Label="Tetsuo.Common.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="6e6b735d-8dd3-4fa8-bf0a-a22a51e65017" name="Tetsuo.Flatline">
+      <references>
+        <reference Id="ecae3c20-98fb-4ca4-affe-ba707efea3bd" name="Tetsuo.Flatline">
+          <ArtifactNode Label="Tetsuo.Flatline" Category="CodeSchema_Project" Id="(Assembly=../net.obliteracy.tetsuo.flatline/Tetsuo.Flatline.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Flatline)" Label="Flatline.exe" Category="FileSystem.Category.FileOfType.exe">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="450bc1da-f949-48be-bf4f-389c223f1a36" name="Tetsuo.Resusitator">
+      <references>
+        <reference Id="86cc4efc-c9bc-435c-b14f-1277e68f0293" name="Tetsuo.Resusitator">
+          <ArtifactNode Label="Tetsuo.Resusitator" Category="CodeSchema_Project" Id="(Assembly=../net.obliteracy.tetsuo.resusitator/Tetsuo.Resusitator.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Resusit8r)" Label="Resusit8r.exe" Category="FileSystem.Category.FileOfType.exe">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

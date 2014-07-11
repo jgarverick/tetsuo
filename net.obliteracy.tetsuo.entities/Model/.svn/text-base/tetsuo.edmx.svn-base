@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="net.obliteracy.tetsuo.entities.model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="netobliteracytetsuoentitiesmodelStoreContainer">
+          <EntitySet Name="Gateway" EntityType="net.obliteracy.tetsuo.entities.model.Store.Gateway" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Hub" EntityType="net.obliteracy.tetsuo.entities.model.Store.Hub" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Spoke" EntityType="net.obliteracy.tetsuo.entities.model.Store.Spoke" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="net.obliteracy.tetsuo.entities.model.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Hubs_Gateways" Association="net.obliteracy.tetsuo.entities.model.Store.FK_Hubs_Gateways">
+            <End Role="Gateway" EntitySet="Gateway" />
+            <End Role="Hub" EntitySet="Hub" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Spokes_Hubs" Association="net.obliteracy.tetsuo.entities.model.Store.FK_Spokes_Hubs">
+            <End Role="Hub" EntitySet="Hub" />
+            <End Role="Spoke" EntitySet="Spoke" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Gateway">
+          <Key>
+            <PropertyRef Name="GatewayId" />
+          </Key>
+          <Property Name="GatewayId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="GatewayName" Type="varchar" MaxLength="50" />
+          <Property Name="GatewayBaseUri" Type="varchar" MaxLength="200" />
+          <Property Name="GatewayDefaultBinding" Type="varchar" MaxLength="50" />
+          <Property Name="GatewayIsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="Hub">
+          <Key>
+            <PropertyRef Name="HubId" />
+          </Key>
+          <Property Name="HubId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="HubName" Type="varchar" MaxLength="50" />
+          <Property Name="HubEndpoint" Type="varchar" MaxLength="50" />
+          <Property Name="GatewayId" Type="uniqueidentifier" />
+          <Property Name="Active" Type="bit" />
+        </EntityType>
+        <EntityType Name="Spoke">
+          <Key>
+            <PropertyRef Name="SpokeId" />
+          </Key>
+          <Property Name="SpokeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="HubId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SpokeName" Type="varchar" MaxLength="50" />
+          <Property Name="SpokeContract" Type="varchar" MaxLength="50" />
+          <Property Name="SpokeBinding" Type="varchar" MaxLength="50" />
+          <Property Name="SpokeEndpoint" Type="varchar" MaxLength="50" />
+          <Property Name="SpokeAssembly" Type="varchar" MaxLength="255" />
+          <Property Name="SpokeClientClass" Type="varchar" MaxLength="255" />
+          <Property Name="Active" Type="bit" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_Hubs_Gateways">
+          <End Role="Gateway" Type="net.obliteracy.tetsuo.entities.model.Store.Gateway" Multiplicity="0..1" />
+          <End Role="Hub" Type="net.obliteracy.tetsuo.entities.model.Store.Hub" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gateway">
+              <PropertyRef Name="GatewayId" />
+            </Principal>
+            <Dependent Role="Hub">
+              <PropertyRef Name="GatewayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Spokes_Hubs">
+          <End Role="Hub" Type="net.obliteracy.tetsuo.entities.model.Store.Hub" Multiplicity="1" />
+          <End Role="Spoke" Type="net.obliteracy.tetsuo.entities.model.Store.Spoke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hub">
+              <PropertyRef Name="HubId" />
+            </Principal>
+            <Dependent Role="Spoke">
+              <PropertyRef Name="HubId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="net.obliteracy.tetsuo.entities.model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="tetsuoEntities">
+          <EntitySet Name="Gateway" EntityType="net.obliteracy.tetsuo.entities.model.Gateway" />
+          <EntitySet Name="Hub" EntityType="net.obliteracy.tetsuo.entities.model.Hub" />
+          <EntitySet Name="Spoke" EntityType="net.obliteracy.tetsuo.entities.model.Spoke" />
+          <AssociationSet Name="FK_Hubs_Gateways" Association="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways">
+            <End Role="Gateway" EntitySet="Gateway" />
+            <End Role="Hub" EntitySet="Hub" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Spokes_Hubs" Association="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs">
+            <End Role="Hub" EntitySet="Hub" />
+            <End Role="Spoke" EntitySet="Spoke" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Gateway">
+          <Key>
+            <PropertyRef Name="GatewayId" />
+          </Key>
+          <Property Name="GatewayId" Type="Guid" Nullable="false" />
+          <Property Name="GatewayName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="GatewayBaseUri" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="GatewayDefaultBinding" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="GatewayIsActive" Type="Boolean" />
+          <NavigationProperty Name="Hubs" Relationship="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways" FromRole="Gateway" ToRole="Hub" />
+        </EntityType>
+        <EntityType Name="Hub">
+          <Key>
+            <PropertyRef Name="HubId" />
+          </Key>
+          <Property Name="HubId" Type="Guid" Nullable="false" />
+          <Property Name="HubName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="HubEndpoint" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Active" Type="Boolean" />
+          <NavigationProperty Name="Gateway" Relationship="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways" FromRole="Hub" ToRole="Gateway" />
+          <NavigationProperty Name="Spokes" Relationship="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs" FromRole="Hub" ToRole="Spoke" />
+        </EntityType>
+        <EntityType Name="Spoke">
+          <Key>
+            <PropertyRef Name="SpokeId" />
+          </Key>
+          <Property Name="SpokeId" Type="Guid" Nullable="false" />
+          <Property Name="SpokeName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SpokeContract" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SpokeBinding" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SpokeEndpoint" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SpokeAssembly" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="SpokeClientClass" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Active" Type="Boolean" />
+          <NavigationProperty Name="Hub" Relationship="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs" FromRole="Spoke" ToRole="Hub" />
+        </EntityType>
+        <Association Name="FK_Hubs_Gateways">
+          <End Role="Gateway" Type="net.obliteracy.tetsuo.entities.model.Gateway" Multiplicity="0..1" />
+          <End Role="Hub" Type="net.obliteracy.tetsuo.entities.model.Hub" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Spokes_Hubs">
+          <End Role="Hub" Type="net.obliteracy.tetsuo.entities.model.Hub" Multiplicity="1" />
+          <End Role="Spoke" Type="net.obliteracy.tetsuo.entities.model.Spoke" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="netobliteracytetsuoentitiesmodelStoreContainer" CdmEntityContainer="tetsuoEntities">
+          <EntitySetMapping Name="Gateway">
+            <EntityTypeMapping TypeName="IsTypeOf(net.obliteracy.tetsuo.entities.model.Gateway)">
+              <MappingFragment StoreEntitySet="Gateway">
+                <ScalarProperty Name="GatewayId" ColumnName="GatewayId" />
+                <ScalarProperty Name="GatewayName" ColumnName="GatewayName" />
+                <ScalarProperty Name="GatewayBaseUri" ColumnName="GatewayBaseUri" />
+                <ScalarProperty Name="GatewayDefaultBinding" ColumnName="GatewayDefaultBinding" />
+                <ScalarProperty Name="GatewayIsActive" ColumnName="GatewayIsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hub">
+            <EntityTypeMapping TypeName="IsTypeOf(net.obliteracy.tetsuo.entities.model.Hub)">
+              <MappingFragment StoreEntitySet="Hub">
+                <ScalarProperty Name="HubId" ColumnName="HubId" />
+                <ScalarProperty Name="HubName" ColumnName="HubName" />
+                <ScalarProperty Name="HubEndpoint" ColumnName="HubEndpoint" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Spoke">
+            <EntityTypeMapping TypeName="IsTypeOf(net.obliteracy.tetsuo.entities.model.Spoke)">
+              <MappingFragment StoreEntitySet="Spoke">
+                <ScalarProperty Name="SpokeId" ColumnName="SpokeId" />
+                <ScalarProperty Name="SpokeName" ColumnName="SpokeName" />
+                <ScalarProperty Name="SpokeContract" ColumnName="SpokeContract" />
+                <ScalarProperty Name="SpokeBinding" ColumnName="SpokeBinding" />
+                <ScalarProperty Name="SpokeEndpoint" ColumnName="SpokeEndpoint" />
+                <ScalarProperty Name="SpokeAssembly" ColumnName="SpokeAssembly" />
+                <ScalarProperty Name="SpokeClientClass" ColumnName="SpokeClientClass" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FK_Hubs_Gateways" TypeName="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways" StoreEntitySet="Hub">
+            <EndProperty Name="Gateway">
+              <ScalarProperty Name="GatewayId" ColumnName="GatewayId" />
+            </EndProperty>
+            <EndProperty Name="Hub">
+              <ScalarProperty Name="HubId" ColumnName="HubId" />
+            </EndProperty>
+            <Condition ColumnName="GatewayId" IsNull="false" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Spokes_Hubs" TypeName="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs" StoreEntitySet="Spoke">
+            <EndProperty Name="Hub">
+              <ScalarProperty Name="HubId" ColumnName="HubId" />
+            </EndProperty>
+            <EndProperty Name="Spoke">
+              <ScalarProperty Name="SpokeId" ColumnName="SpokeId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="tetsuo">
+        <EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.Gateway" Width="1.5" PointX="0.75" PointY="1.25" Height="2.1725878906250005" IsExpanded="true" />
+        <EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.Hub" Width="1.5" PointX="3" PointY="1.25" Height="2.1725878906250005" IsExpanded="true" />
+        <EntityTypeShape EntityType="net.obliteracy.tetsuo.entities.model.Spoke" Width="1.5" PointX="5.25" PointY="1" Height="2.7494921874999996" IsExpanded="true" />
+        <AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_Hubs_Gateways" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.3362939453125002" />
+          <ConnectorPoint PointX="3" PointY="2.3362939453125002" /></AssociationConnector>
+        <AssociationConnector Association="net.obliteracy.tetsuo.entities.model.FK_Spokes_Hubs" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="2.3362939453125002" />
+          <ConnectorPoint PointX="5.25" PointY="2.3362939453125002" /></AssociationConnector></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

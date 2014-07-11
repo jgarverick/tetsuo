@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4f33f2eb-5a60-4846-8600-abc0a0c1f5d8"
+  name="Entities"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="3ca238ca-96bb-4883-8cac-adce25aa9afe"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Tetsuo.Entities"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f68731ef-f3f2-4f4f-94f9-7a13d8d83d24"
+        name="EntityManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c08556bb-b1d5-435b-abd2-28bc43477bf5"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/net.obliteracy.tetsuo.entities/bin/Debug/Tetsuo.Entities.dll Namespace=Tetsuo.Entities Type=EntityManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="da62473e-a24d-480c-8222-e6dd9bbf3a25"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c110ac9-40e0-4d21-880a-c9348bfaca48">
+                <propertyInstance
+                  Id="0f33bc81-a717-4644-ac9e-912cabddd1cd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e430cca-d88e-43b7-b892-2b726a761463">
+                <propertyInstance
+                  Id="59dff162-a299-4a57-b255-a86310219eb7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d523a0c0-a3bc-4c29-b840-7acbba15b88f">
+                <propertyInstance
+                  Id="97b7b98c-b58d-45ab-af85-10954a9367b8"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4fe9069b-15ef-4aea-b60a-515b59c07960">
+                <propertyInstance
+                  Id="21d4c7b5-91a0-4374-8c9d-33ca9276b301"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f823b69-6696-48df-a5ab-f6fd25ff88f0">
+                <propertyInstance
+                  Id="67993600-89a7-4c73-a2bf-d2e0c5b06fc7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

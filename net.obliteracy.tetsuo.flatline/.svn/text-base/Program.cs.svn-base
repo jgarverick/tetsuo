@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Reflection;
+using System.IO;
+using System.Resources;
+using net.obliteracy.tetsuo.io;
+using System.Windows.Forms;
+
+namespace net.obliteracy.tetsuo.flatline
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                // This program is used to generate a new DNR assembly
+                // from an existing one.
+                DnrManifestWriter wr = new DnrManifestWriter();
+                wr.AddManifest("D:\\HSSI.Contract.dll");
+                wr.Output("D:\\HSSI.dnr");
+
+                DnrManifestReader dr = new DnrManifestReader("D:\\HSSI.dnr");
+
+                Console.Read();
+            
+        }
+
+        
+
+        
+    }
+}

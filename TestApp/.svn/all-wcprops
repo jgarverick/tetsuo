@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/62443/FrameworkV4/TestApp
+END
+TestApp.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/62443/FrameworkV4/TestApp/TestApp.csproj
+END
+TestDatabase.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/62443/FrameworkV4/TestApp/TestDatabase.sdf
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/62443/FrameworkV4/TestApp/app.config
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/62443/FrameworkV4/TestApp/Program.cs
+END
+TestApp.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/62443/FrameworkV4/TestApp/TestApp.csproj.user
+END

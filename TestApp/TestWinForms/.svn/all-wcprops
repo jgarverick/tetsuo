@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/62443/FrameworkV4/TestApp/TestWinForms
+END
+TestWinForms.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/62443/FrameworkV4/TestApp/TestWinForms/TestWinForms.csproj
+END
+Form1.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/62443/FrameworkV4/TestApp/TestWinForms/Form1.Designer.cs
+END
+Form1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/62443/FrameworkV4/TestApp/TestWinForms/Form1.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/62443/FrameworkV4/TestApp/TestWinForms/Program.cs
+END

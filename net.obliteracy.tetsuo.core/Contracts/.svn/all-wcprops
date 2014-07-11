@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.core/Contracts
+END
+IServiceSpoke.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.core/Contracts/IServiceSpoke.cs
+END
+IServiceResolverGateway.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.core/Contracts/IServiceResolverGateway.cs
+END
+IBaseServiceContract.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.core/Contracts/IBaseServiceContract.cs
+END
+IServiceHub.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/62443/FrameworkV4/net.obliteracy.tetsuo.core/Contracts/IServiceHub.cs
+END

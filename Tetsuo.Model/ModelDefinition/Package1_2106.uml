@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f0049c0a-1584-464f-bd11-087f0cd74ff8"
+  name="Common"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="aa3753bb-b099-420f-9caa-5f9b682d3c53"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Tetsuo.Common"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="58642062-ee22-432a-bba7-4dcba01fe1fb"
+        name="ActionParameter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1fb18bef-6883-4e32-90b1-f2b5e5fa7995"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ActionParameter"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0a6b8a54-52bf-4114-a78e-5a429253df44"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="50207257-4cd4-4e5a-8b71-2ddb9c6599b1">
+                <propertyInstance
+                  Id="c472a576-22c8-4a8a-862a-a1fbf0d06c63"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="21c091a5-6713-4cde-8b84-b408ad4837d4">
+                <propertyInstance
+                  Id="b6d7b19b-200e-4cd4-9b01-fffec78250b4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5382e0a-ca72-421d-b65c-1e0a3289daf6">
+                <propertyInstance
+                  Id="9f7ee712-0c65-42cf-b9af-e57734ba6fd2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="81b2f268-b276-433a-96e6-e04f49583b90">
+                <propertyInstance
+                  Id="df0503d6-cfc9-40b5-aa51-04963770fdcb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="37e6ffc6-4b0b-4c65-b8c7-964867515f40">
+                <propertyInstance
+                  Id="488c864f-eaee-4bd9-b99f-5270615ce3ae"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="5ed6dd51-1bc8-4fcb-b1bc-32cf268dc8a3"
+            isDerived="false"
+            sourceEndRoleName="ActionParameter"
+            targetEndRoleName="Value"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c87ef8ad-ac9b-4811-90b6-cae36e4b1af3"
+              LastKnownName="Object"
+              LastKnownLocation="Package2_2106.uml" />
+            <description>Property Value references type Object.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21249da4-320b-481c-b923-c875ac00e8e2"
+                  name="ActionParameter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="515dbd80-5db6-44d0-a544-fb9c69df7f1d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6173bcbd-48c9-412b-b7d8-e6a93d67e466"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0abd2e27-c136-489d-aeec-f0a8bfa4d513"
+                  name="Value"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="15f612ea-4223-4118-94f2-54004260c2cc"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="44535e92-bb9a-4159-b7f9-4e584bb74780"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="75d4dbb0-e459-48da-b5b6-7877cb80c87b"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="815a5cf0-7e41-48f7-a221-fa563884a1d1"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ActionParameter Member=Name"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3215035f-ab04-4102-b456-d32f2e45813a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18afd5c6-6a5a-425f-ade8-01522c7f26cb">
+                    <propertyInstance
+                      Id="205bcf01-b1c4-44d8-a155-edc4c672a08e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f6976df-9d6f-4ec2-88db-429634672a9c">
+                    <propertyInstance
+                      Id="56d111c8-75a7-411f-a322-1cf0b31037f0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30e78946-8e1e-4d75-b473-7015c90c15ab">
+                    <propertyInstance
+                      Id="f773e591-5493-4486-8532-65603fdf638f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45a093e2-dedf-44c7-9de1-deb46cf1e969">
+                    <propertyInstance
+                      Id="6de23366-a55b-4b5a-850d-9e0be712f0b4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="676fc5b7-a789-42e5-85e7-03d838d81e92">
+                    <propertyInstance
+                      Id="2deef2c0-0f49-4087-8ca3-351d2a1fbd9d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4af54e36-c415-4585-8840-ed56475c6456">
+                    <propertyInstance
+                      Id="593e5935-be0f-460f-8431-0c590bada315"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Tetsuo.Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="be86726c-26d0-45fb-98ce-de9522f41003"
+            name="ParamType"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3dae7ee0-4d5d-4e4a-a910-cdcc3184940e"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ActionParameter Member=ParamType"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d0e04533-e394-4d6a-8c9a-a66ee54c9f67"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8b74eb0-9fd7-49de-8467-57b4cf7faada">
+                    <propertyInstance
+                      Id="98964f90-4e95-4c14-a6f8-4b41b6b2b88f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="445e5dc1-bf1b-42e5-bec3-4168988c9e62">
+                    <propertyInstance
+                      Id="35dcf4eb-7273-4a2e-bf1c-1e00de832545"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26e0eec9-fe7c-4fb3-980d-cb9be0b4ad28">
+                    <propertyInstance
+                      Id="d91468c7-2b1d-4bf7-a0d5-5ddfa36e1684"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09348a82-b58d-4474-8853-748cdfb91c72">
+                    <propertyInstance
+                      Id="3a1dfb77-5a28-4c24-a9b2-72d36d28d791"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10e39b97-1fc3-4363-93f8-c44b4949eb44">
+                    <propertyInstance
+                      Id="a0ff24cb-a4e0-4df1-a28d-cf46b953848f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6763e7f7-5ea7-4f20-9560-f21a6ba71ec5">
+                    <propertyInstance
+                      Id="9cda5daa-058f-4c38-b284-ee99bbe21135"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Tetsuo.Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a13a9a29-fd15-4ff6-af00-d43eff294832"
+            name="Value"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="718db45d-14aa-42b9-b637-1781f55306af"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ActionParameter Member=Value"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7bf3b3be-4e14-4e7d-b105-622516855f26"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c46655da-d560-4a67-8267-76797a090a46">
+                    <propertyInstance
+                      Id="8750b36a-923d-4563-94a2-cccde1e987af"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3020e3e-5a45-4748-bb26-2772453f95bf">
+                    <propertyInstance
+                      Id="f8d1970e-0396-4dde-9c27-629b6a642ec6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15b32d07-b567-4e9b-9ed6-60e6718304cd">
+                    <propertyInstance
+                      Id="7b789633-298a-4f9c-8845-1c81c733a190"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f559cfe7-af36-4cd6-921c-65453617d33c">
+                    <propertyInstance
+                      Id="42bd7f57-97a7-4552-9100-392aa88d6c0b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d12a8e47-fd02-46bc-a975-92c933edb05f">
+                    <propertyInstance
+                      Id="ebcad640-5c94-4e84-9e5a-2c5bbafa1aa1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef46d6d6-b44d-4209-9442-06ef57971d36">
+                    <propertyInstance
+                      Id="23e2aae3-ac15-4cc9-a0de-bf4d513c8e7b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c87ef8ad-ac9b-4811-90b6-cae36e4b1af3"
+                LastKnownName="Object"
+                LastKnownLocation="Package2_2106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="00fbbd29-f57e-4429-a1b9-cf2ed3a3c675"
+            name="ActionParameter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="02b26e78-2335-4b3a-90d4-5c265c3a7b8b"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ActionParameter Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4d27601a-54d6-4eaf-a070-500d23b51700"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30d85757-b51e-4f78-b0f2-f619373b24f4">
+                    <propertyInstance
+                      Id="9d134d82-c90d-4932-9f29-22f915538021"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dca8854-c3a4-4b52-9c7a-e8defa8bdf55">
+                    <propertyInstance
+                      Id="1f4a4fba-19be-4758-8106-25f8eee711be"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b37bce2-53a9-4bb4-9396-e6df55f8d994">
+                    <propertyInstance
+                      Id="797df6d3-c017-4ab9-ba95-03f721882c8a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cc4904a-e853-4938-be90-86f0329d7d69">
+                    <propertyInstance
+                      Id="c79001ff-c7f3-4331-b153-4a857e000aa1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25ac2274-80a7-4de7-b031-6b1ae984d5a7">
+                    <propertyInstance
+                      Id="ff458000-fbee-46a3-967e-1e0a29718a5e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="3d94c30e-b625-4cf3-8ea5-8b711924a149"
+        name="InstrumentationSources"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6482cb6a-ae0e-4704-b983-e6c93fbf8fe0"
+            handle="viewcode://./CodeSchema_Enum?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=InstrumentationSources"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="36b5298a-73ed-495c-a566-1ba5655979a0"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d22ddcdd-e889-467d-9437-6f476654bf72">
+                <propertyInstance
+                  Id="097564c8-3cab-453e-8561-c1acdeda4e15"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2234beaa-55db-4216-aac6-73670d74bf22">
+                <propertyInstance
+                  Id="e238238e-9377-463c-b6e4-3eabc3f0fd04"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3b7c7822-0f32-422a-95dc-310c950b55b6">
+                <propertyInstance
+                  Id="f053535b-1802-49ff-8d67-ca32b5ed315e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="d920e0d3-b344-4c39-8d64-bf7815d14914"
+            name="Gateway">
+            <referencesInternal>
+              <reference
+                Id="2076c872-7464-4555-b34d-f5aa9b6c527a"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=InstrumentationSources Member=Gateway"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="8487aef0-68d1-4811-ae24-a32e6894115d"
+            name="Hub">
+            <referencesInternal>
+              <reference
+                Id="ef1a9813-3114-4acf-b681-3a237402760f"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=InstrumentationSources Member=Hub"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="d9fe1c4f-dc32-4eb0-ba91-64ced525c181"
+            name="Spoke">
+            <referencesInternal>
+              <reference
+                Id="b9a5f089-6f59-4878-98b8-59518cb16a40"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=InstrumentationSources Member=Spoke"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="9155f40e-a2a2-465e-9597-607df67885a5"
+            name="System">
+            <referencesInternal>
+              <reference
+                Id="5844215e-4c8a-46db-8c2e-6f7c92dd973c"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=InstrumentationSources Member=System"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="0aaaf5d7-d2a3-44ff-9792-ff7d6d73be96"
+        name="ReslovedEnpointTypes"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="885b736e-19db-47af-8c8d-f058c8ea7f7e"
+            handle="viewcode://./CodeSchema_Enum?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ReslovedEnpointTypes"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="df86ed49-f38c-499b-9eb5-4c2fb5a240a4"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1a83fc51-a7e6-45b5-b106-85cccc4514b2">
+                <propertyInstance
+                  Id="c951a4b3-f46b-4483-bff3-d0aeedecda9c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41a2f4d0-a9a6-4c84-8cb0-3c5c66fc7975">
+                <propertyInstance
+                  Id="90757dfb-985a-4aaf-8f35-7b105c10d78d"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a31d02e2-b404-4bff-93b4-b2d801e3fd6c">
+                <propertyInstance
+                  Id="38d835cf-b1aa-45e5-8265-a7fe36f27b7f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="5c54aafd-32b4-4dba-b943-36ab3f35a576"
+            name="Gateway">
+            <referencesInternal>
+              <reference
+                Id="b7f6e351-eda1-46b1-bd82-982dfa7d0bec"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ReslovedEnpointTypes Member=Gateway"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="441512fb-cc16-4a7e-8b7c-be3beba588fc"
+            name="Hub">
+            <referencesInternal>
+              <reference
+                Id="cd87858b-27dc-4616-8e0d-9f82266d08b3"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ReslovedEnpointTypes Member=Hub"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="a424ab9f-bffd-453e-95df-90566f25b34a"
+            name="Service">
+            <referencesInternal>
+              <reference
+                Id="a4b0bbdb-1e09-4e83-84ab-7e0132eb2be1"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=ReslovedEnpointTypes Member=Service"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4c7ae720-8836-4d06-9990-0c73dfa92fdd"
+        LastKnownName="Contracts"
+        LastKnownLocation="Package3_2106.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="453d3813-53a0-485e-8343-18ca976f9ecf"
+        name="TransmissionStatusCodes"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="1c45b225-1e05-4d1d-83e3-730f2df6bff4"
+            handle="viewcode://./CodeSchema_Enum?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f38d0def-499f-4dfa-9bc5-c699d927f75f"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb3367b8-72ca-455f-ac88-67c62060a82d">
+                <propertyInstance
+                  Id="f4e1321c-d60a-4087-9ca5-6a8a71998a9c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af5e9f87-8bfc-4528-ab91-b92fc1fe30ee">
+                <propertyInstance
+                  Id="0ab89b1a-9ce1-4961-bee7-944d250d637a"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0286e596-0cad-43de-9c3d-fdde5cf2200a">
+                <propertyInstance
+                  Id="b7beb5b1-70ea-4388-a894-4e9f303518a3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="641ad88c-9e01-4399-9b5e-650e15eed9d7"
+            name="BEGIN">
+            <referencesInternal>
+              <reference
+                Id="5d4f5f56-d232-491a-95c2-7d7613abe296"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes Member=BEGIN"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="5bd9c7a2-523c-4111-ae51-53e78242ab56"
+            name="EOT_ERR">
+            <referencesInternal>
+              <reference
+                Id="8422d440-05e0-4cf3-afca-0038c6bb5624"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes Member=EOT_ERR"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="20acd83e-9924-4892-91f3-e6a2fb0ee7a4"
+            name="EOT_GOOD">
+            <referencesInternal>
+              <reference
+                Id="854f9df5-7ef1-4c98-b99d-c5d7f1fc766f"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes Member=EOT_GOOD"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="927dc098-4d95-430b-b1e9-4587bdc831b8"
+            name="PARK">
+            <referencesInternal>
+              <reference
+                Id="372b4e00-2597-4028-9075-e0cdf7f774da"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes Member=PARK"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="16eca662-46bc-4d5b-9465-689ade47be14"
+            name="RESUME">
+            <referencesInternal>
+              <reference
+                Id="1f591a3e-0c8c-4c1c-9ec1-f1335af167bb"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes Member=RESUME"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="575ef90c-b6ba-4707-a8c8-9ab8b6e55865"
+            name="ROUTE">
+            <referencesInternal>
+              <reference
+                Id="ae63bf37-9c96-4fd2-afd1-68370c2da919"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes Member=ROUTE"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="59e598cb-98a0-4c60-803c-896075f7480e"
+            name="SVC_START">
+            <referencesInternal>
+              <reference
+                Id="95672de2-c50d-42ca-8391-e04a75d9f7b1"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes Member=SVC_START"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="dcc5ed5d-b307-4739-92b2-14fea9a5bce1"
+            name="SVC_STOP">
+            <referencesInternal>
+              <reference
+                Id="4492c230-d74f-43d8-8d14-bca9dfe5f4e0"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common Type=TransmissionStatusCodes Member=SVC_STOP"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,9 @@
+﻿namespace net.obliteracy.tetsuo.core.Common
+{
+    public enum ReslovedEnpointTypes
+    {
+        Gateway = 0,
+        Hub,
+        Service
+    }
+}

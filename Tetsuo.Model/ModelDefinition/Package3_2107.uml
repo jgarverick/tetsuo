@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2b183922-a34f-438a-97b8-f3bd69fecc17"
+  name="MsmqIntegration"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9c5e0da9-2bd8-4470-bdaf-c33c2366e954"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=System.ServiceModel.MsmqIntegration"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6193ef02-acb2-46db-b060-4eca9bcbd620"
+        name="MsmqMessage&lt;RoutedMessageContract&gt;"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="49f7761c-c5df-4936-ab12-7c10d6277a0b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="33738334-091c-40eb-b342-71ad4375755d">
+                <propertyInstance
+                  Id="a41dc83d-0f22-4f2c-9dd2-e5efbd0ef841"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ad572ed-670a-45bc-a0a5-c165e5de8c6e">
+                <propertyInstance
+                  Id="849420b4-5470-4f11-b30b-8676c917cfa1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5a84def-da18-4360-9f95-90885dd67de1">
+                <propertyInstance
+                  Id="08292aad-085f-4422-8004-b994768633d6"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="599c5c36-10b3-4d39-8a4d-902d8ad72a3a">
+                <propertyInstance
+                  Id="dcf7f23d-dfc6-4878-aae0-21cf3c37d749"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e86bce61-594f-4e57-9dc6-09de34d55b74">
+                <propertyInstance
+                  Id="7f466a79-61b9-4fd1-848b-f3c819593861"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="12431c4a-6f53-48f5-afe8-a5c9867764a5">
+            <redefinableTemplateSignatureMoniker
+              Id="cf50d441-398b-441b-9a1d-0164d6c351fd"
+              LastKnownLocation="Package3_2107.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="b99b2a1f-7cba-4682-b9e2-c4a4a048b908">
+                  <actuals>
+                    <classMoniker
+                      Id="083b7715-7337-4b61-826e-119124a88c72"
+                      LastKnownName="RoutedMessageContract"
+                      LastKnownLocation="Package3_2106.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="2968e3c5-f8e7-4179-8941-30621200a7f3"
+                      LastKnownLocation="Package3_2107.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0f5523d1-9bd4-415d-92c2-fbb9b4a42203"
+        name="MsmqMessage"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="82814d14-fb6e-4d44-9bc9-d9c0dffbdb8e"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.ServiceModel.dll&quot; Namespace=System.ServiceModel.MsmqIntegration Type=(Name=MsmqMessage GenericParameterCount=1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7aa87848-0824-4fb3-a7f6-6132789f4135"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31fb1f89-68a9-4b29-aae2-784a3144bdf9">
+                <propertyInstance
+                  Id="d804597f-b00a-4661-a4de-5296201437e7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6060246d-3fe4-457b-8312-0b1048f06e61">
+                <propertyInstance
+                  Id="ce66ba6f-1e9c-4531-bde8-7b7f6cf9543a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e8c226b-2c60-4ec5-b5fc-0963a7e6ec31">
+                <propertyInstance
+                  Id="d127b18a-9602-4316-a74c-d46a69473ea6"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c47192c0-ad36-4204-8391-8cb7a541ecf6">
+                <propertyInstance
+                  Id="fe234d74-ac1a-4f09-8bd2-72f1d99986b9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1566ea43-5ca3-48e3-a9bc-d0a0f160fcd7">
+                <propertyInstance
+                  Id="0836e426-5191-44de-bdd4-f9fa99ca04f9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="cf50d441-398b-441b-9a1d-0164d6c351fd"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="2968e3c5-f8e7-4179-8941-30621200a7f3">
+                <referencesInternal>
+                  <reference
+                    Id="7b010f22-8f80-4cad-8d27-89e215963b46"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly=&quot;file:///C:/Program Files/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.ServiceModel.dll&quot; Namespace=System.ServiceModel.MsmqIntegration Type=(Name=MsmqMessage GenericParameterCount=1) ParameterIdentifier=0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="5970af25-810f-4522-a760-406ad18cbe56"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

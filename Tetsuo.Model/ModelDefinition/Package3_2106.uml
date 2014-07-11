@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4c7ae720-8836-4d06-9990-0c73dfa92fdd"
+  name="Contracts"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="28efc3cb-f180-4deb-9f21-3b06ae726bb2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Tetsuo.Common.Contracts"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="083b7715-7337-4b61-826e-119124a88c72"
+        name="RoutedMessageContract"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9662a0a7-38b5-4ba7-ae28-353446efd2e0"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common.Contracts Type=RoutedMessageContract"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2eeb7190-acc3-4fcd-a6e3-9b44d625a1f1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9f9076d-b54f-4ac6-a77a-424bd2dfde14">
+                <propertyInstance
+                  Id="d9ea0f85-f954-4043-91b8-6e2b699e7f48"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c1a3012d-2a21-459a-866d-5794cc57da17">
+                <propertyInstance
+                  Id="b76f9aef-5817-4af9-88b4-a5b88e7a2525"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0758062e-edde-4196-bb84-873d6ef07ede">
+                <propertyInstance
+                  Id="0a18eded-1aa0-4326-9801-ec355649e80a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b5339e0d-9fc5-4087-a32c-05b3358e5aa8">
+                <propertyInstance
+                  Id="809ef1f7-5d42-4f72-b16d-944ddb1f921d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15e341d5-764a-41f8-a383-f1c1f17eaa94">
+                <propertyInstance
+                  Id="434ae3de-118c-441b-adc5-af0280ffaef9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="ffa3ab04-3d41-4e58-a125-35843cade5e0"
+            isDerived="false"
+            sourceEndRoleName="RoutedMessageContract"
+            targetEndRoleName="MessageBody"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c87ef8ad-ac9b-4811-90b6-cae36e4b1af3"
+              LastKnownName="Object"
+              LastKnownLocation="Package2_2106.uml" />
+            <description>Property MessageBody references type Object.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a78c013a-665f-44cb-acfe-fa12f8986242"
+                  name="RoutedMessageContract"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2abe7082-8b0f-4d15-9685-1fe47d6bf6f0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="58bc299b-1c0e-40f7-b1ed-72f2192c563b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0677630c-0235-4ec9-9049-d7d2e716672e"
+                  name="MessageBody"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e4c4752f-84ab-444a-9831-164a58da4066"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3e544319-5eb8-43fe-bb0f-370f0bfc64a3"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7a77eda3-64ca-48c6-ba44-08797fd80892"
+            isDerived="false"
+            sourceEndRoleName="RoutedMessageContract"
+            targetEndRoleName="StatusCode"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="453d3813-53a0-485e-8343-18ca976f9ecf"
+              LastKnownName="TransmissionStatusCodes"
+              LastKnownLocation="Package1_2106.uml" />
+            <description>Property StatusCode references type TransmissionStatusCodes.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f514397d-3b09-4b29-9046-8dc10df5aeb8"
+                  name="RoutedMessageContract"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="18b595e9-3f3f-4d44-b8c3-1b6364d5c9c6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="55a56870-5190-40e0-8bd1-990930b62662"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="41a89846-9434-4d5d-8f93-428357061218"
+                  name="StatusCode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="71fb38fc-7cda-4ce1-8e2d-b3a5136e1b0d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="517f83f2-f602-4743-ae13-218204a6e765"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="057a948b-2b50-41e2-89d1-82d3ffdc95c8"
+            name="Action"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c39320a5-5421-45e0-9ce8-ab2b10dedfab"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common.Contracts Type=RoutedMessageContract Member=Action"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6528236f-e4e8-4919-86c9-634139d1e895"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e36a131-8fed-4a02-9b8c-66137e325926">
+                    <propertyInstance
+                      Id="2cc585cf-1bfa-4ef0-9272-ceaaa8616b26"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="672b1c0c-bbaf-4a05-a82a-a873f6457c0b">
+                    <propertyInstance
+                      Id="a7e49308-5706-43bf-90bf-c02a969c2d71"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ff72726-add6-48c1-b845-6a42f0c36bfb">
+                    <propertyInstance
+                      Id="2785e798-4c6c-429b-b810-c5dc9cbb6908"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="faf9e68c-983d-4d20-b085-5271f8cb93d7">
+                    <propertyInstance
+                      Id="8e7f9cce-df05-4439-a43b-000f758ddec2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5a3777f-6331-4f36-ab56-917953cfa896">
+                    <propertyInstance
+                      Id="ee6b5bc0-6610-402e-994c-2a0608422fcc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="077dd401-8772-4395-a061-e38b3ef99e4d">
+                    <propertyInstance
+                      Id="389d9e70-76e6-44c5-aab2-3daf6242155e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Tetsuo.Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5ca8f06f-45b7-445e-a69f-7897c37cad4f"
+            name="DestinationHub"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e6b63e9d-3968-486a-a4a1-13e83f4d45bf"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common.Contracts Type=RoutedMessageContract Member=DestinationHub"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="38f01192-3cee-49e1-8ad1-8a9cab27645a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef5174d9-4d30-41c8-9f38-d9a5bb1330e4">
+                    <propertyInstance
+                      Id="51826b77-7152-496c-8c5d-a3f83e5fe811"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe6714a7-2880-43fb-b348-cd6817282a23">
+                    <propertyInstance
+                      Id="dc8ad281-a734-4018-9921-91be6967213c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67a7360b-1180-4b64-821e-74a3844f4d27">
+                    <propertyInstance
+                      Id="724f5a97-9521-4717-8de5-952babe8d06d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e39a30f-3e09-405f-a1e6-d4e8d2fbd8ea">
+                    <propertyInstance
+                      Id="5e2e1271-c2b0-4111-950f-e6a2c090df55"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1952a17c-612a-477a-806c-19ba048496d2">
+                    <propertyInstance
+                      Id="09fd68a8-af6e-4703-bb6c-1b53336f176f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1020d8b7-7c4b-418c-9b92-5948b9903672">
+                    <propertyInstance
+                      Id="ba83bc16-b176-4d22-ac72-e0f1772e14b2"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Tetsuo.Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d4621b1a-d4fb-49a8-af4f-520c73701d2e"
+            name="DestinationSpoke"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="42a80131-8ca9-4689-9bfc-6fef12815e2f"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common.Contracts Type=RoutedMessageContract Member=DestinationSpoke"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1ef309a9-af08-4337-afff-c10c1e8e845d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d0385ce-d1b5-4f99-8141-4205ea53d67e">
+                    <propertyInstance
+                      Id="f4f00047-7caf-4836-b436-10114fdf3201"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baed03fb-e8c6-472d-ac1c-a33d0cb9375c">
+                    <propertyInstance
+                      Id="dc62e916-ee8e-4409-8aac-b902e8a95fb2"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4762beae-1eb6-406c-9283-ffd8171e734b">
+                    <propertyInstance
+                      Id="819779d0-79cc-43ea-abd6-0abe012623f7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="290fa4b7-5f99-4a92-a816-dc2a880a043e">
+                    <propertyInstance
+                      Id="ddf8e0d6-f37b-4882-a622-5c1140c4acf1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b28fee03-e8bb-4571-bd21-d868f06f15de">
+                    <propertyInstance
+                      Id="1e7346e0-1079-4ff5-a52e-0d5fc47468d3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2da5a9c3-8159-47a4-a9b5-840c5d2efb40">
+                    <propertyInstance
+                      Id="7d0af252-97e3-4f48-ad2d-30966d547534"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Tetsuo.Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9d25e51a-9698-4af9-8ee6-c6a2eb67e90a"
+            name="IsFromGateway"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="59a3e101-7c3a-45b0-8b11-ca3633f469e7"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common.Contracts Type=RoutedMessageContract Member=IsFromGateway"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="20476213-65a4-4796-b06e-ccd2af14ff13"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c1cb5f9-1457-410a-81da-a3b3890f8622">
+                    <propertyInstance
+                      Id="17840a3e-329f-47c1-b5ba-1c28bd68aca0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e444762-2a86-43b4-b24a-84ad0c60aaa5">
+                    <propertyInstance
+                      Id="ceb6feca-9b60-47d9-bba1-0253a0d03ac0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="783b87d6-c2d5-41e6-848f-3d734453dc53">
+                    <propertyInstance
+                      Id="a60dd40a-4127-47b7-938d-1045de01b9fd"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92908732-60f8-4ca4-af2d-fdbb5d1fdc2e">
+                    <propertyInstance
+                      Id="1110b444-2331-4151-8e42-7e3591206e88"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0049cb71-08eb-4a6e-9a77-13fd85428eec">
+                    <propertyInstance
+                      Id="bbb0bf72-9d43-4ef1-9e87-3e9078560492"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24dd3e2c-f390-452d-b520-f793aebe9194">
+                    <propertyInstance
+                      Id="697fd200-bf67-418e-9c11-6bb6edee2bda"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Tetsuo.Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4b90fcae-5299-4b91-ac7e-9e97308d5d18"
+            name="MessageBody"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2473fc9c-ef2a-443b-baae-be25c64dfd4e"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common.Contracts Type=RoutedMessageContract Member=MessageBody"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6a1ff822-9a42-4789-8ac4-dccbe66777fd"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92aad8e9-83a2-4782-8360-3a31dd1d9dc7">
+                    <propertyInstance
+                      Id="fda565c1-7e4e-4a29-8652-c5fb069bd8ee"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbbdcc0d-8bfa-44ca-9732-aec1e4d88859">
+                    <propertyInstance
+                      Id="8efe1d14-86f7-4ec8-9466-d8fc75c9cec2"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d02e2a4-7706-485d-93c7-ac8f2474e62b">
+                    <propertyInstance
+                      Id="2ef12780-b6ee-4263-bddd-a6d363628984"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f821a85-dfd6-40b8-8bff-83135b2eae0a">
+                    <propertyInstance
+                      Id="2845315a-e603-4cdb-9bd5-d13d28cec32b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="caf15c45-5a85-49ef-8e9b-4cb08f6424fa">
+                    <propertyInstance
+                      Id="20e60073-2d2c-4b6f-99c1-7dff25cacbac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a41810f6-325a-411c-809f-8d0efe59a202">
+                    <propertyInstance
+                      Id="11e0fa4e-c124-4c21-b7cb-e386615d54a9"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c87ef8ad-ac9b-4811-90b6-cae36e4b1af3"
+                LastKnownName="Object"
+                LastKnownLocation="Package2_2106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="08aaf3be-d58f-4c14-b5d2-98a1982fa6ae"
+            name="StatusCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a20309af-1c63-48ea-9465-c658757c2838"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common.Contracts Type=RoutedMessageContract Member=StatusCode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c60f4f8-4239-4e52-9f17-ca7a5558525e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eab1c46c-93b1-432e-8486-91a57edaf9fa">
+                    <propertyInstance
+                      Id="56da160d-4a20-4fb3-b622-c9b3db75c959"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9461668-f11e-47a4-932e-9ae4a81ff1b7">
+                    <propertyInstance
+                      Id="2b11a457-5c9c-406b-b4fd-ec9a35f6bc98"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3eb22bbb-130e-416b-88ff-c63a661885c2">
+                    <propertyInstance
+                      Id="aaab2717-84b1-4a43-91cc-cefd81a20c89"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f6fdc21-7994-4e96-97e9-2a91e8409bda">
+                    <propertyInstance
+                      Id="bebe2c08-0203-4783-9efa-17148a7d0c69"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c4e8683-4e7b-4d6e-8b32-1adab1a081ef">
+                    <propertyInstance
+                      Id="e3890ea0-3613-411b-944f-763e98a13849"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51f927fd-8998-4501-aa38-c70cdfaf4ff8">
+                    <propertyInstance
+                      Id="4b4b006f-1d11-4686-8817-4a2026a63c81"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="453d3813-53a0-485e-8343-18ca976f9ecf"
+                LastKnownName="TransmissionStatusCodes"
+                LastKnownLocation="Package1_2106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="288cac2b-e6d7-4ee5-b26f-9c4c375477db"
+            name="RoutedMessageContract"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bce30455-d317-4cf6-bda3-e48534f82961"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/Josh/Dropbox/Code/tetsuo/FrameworkV4/Tetsuo.Common/bin/Debug/Tetsuo.Common.dll Namespace=Tetsuo.Common.Contracts Type=RoutedMessageContract Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a261385d-2a37-4c9f-b7e0-bf6a6f227a28"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00f0b66b-6501-4c3d-94a2-f3738792bb1a">
+                    <propertyInstance
+                      Id="d9170a8c-c1a4-4a30-8ded-97da3a8a922c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d401417b-1142-480d-883d-1b59405c4789">
+                    <propertyInstance
+                      Id="cf154a37-8224-4f41-b608-c250e68d8c73"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8534f853-b724-4cc4-8421-8736aeecf10b">
+                    <propertyInstance
+                      Id="a10f044f-fb8c-4170-bde6-dfbf91f5aaf3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a4c9bb1-bc0f-4c27-8936-4363c041f735">
+                    <propertyInstance
+                      Id="7ea2c4d8-1471-4c43-a2ce-58b1b4781cfa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5eb7dc90-c889-4460-a8b3-82ca1faed190">
+                    <propertyInstance
+                      Id="39345e22-f2e1-4c37-ac82-ef7d96dd0e33"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
